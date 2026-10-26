@@ -1,0 +1,6 @@
+{
+  "name": "Sumit Ki Nagri - Apni Nagri 3D Living City",
+  "description": "Interactive 3D living Indian town simulation where visitors become residents with custom homes, shops, bustling bazaar, auto-rickshaws, and heritage mohallas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
