@@ -43,7 +43,7 @@ button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
 @keyframes tk{to{transform:translateX(-100%)}}
 </style></head><body>
 <div id="hd" class="fx"><b>Sumit Ki Nagari</b><i>सुमित की नगरी · Apna ghar, apne log</i><small>संस्थापक: सुमित गुप्ता · @sumitg_2429</small></div>
-<div id="tp" class="fx"><button id="bR" class="on">Ghumao</button><button id="bN">Raat</button><button id="bD">Data</button><button id="bCinema" style="background:#e74c3c;color:#fff;font-weight:700">🎬 Cinema</button><button id="bDrone">🛸 Drone</button><button id="bBank">🏦 Bank</button><button id="bSnd">🔊 Sound</button><button id="bT">Ticket</button><button id="bG">Cricket</button><button id="bF">Tyohar</button><button id="bW">🌎 World</button><button id="bI">🇮🇳 India</button><button id="bC">💬 Chat</button><button id="bE">📰 News</button><button id="bQ">🪙 Mission</button><button id="bV">🗳️ Chunav</button><button id="bY">🎮 Khel</button><button id="bM">🌦 Mausam</button><button id="bU">👥 Follow</button><button id="bH">🎣 Machhli</button><button id="bJ">📍 Jao</button></div>
+<div id="tp" class="fx"><button id="bR" class="on">Ghumao</button><button id="bN">Raat</button><button id="bD">Data</button><button id="bCinema" style="background:#e74c3c;color:#fff;font-weight:700">🎬 Cinema</button><button id="bRE" style="background:#27ae60;color:#fff;font-weight:700">🏙️ 3D City</button><button id="bDrone">🛸 Drone</button><button id="bBank">🏦 Bank</button><button id="bSnd">🔊 Sound</button><button id="bT">Ticket</button><button id="bG">Cricket</button><button id="bF">Tyohar</button><button id="bW">🌎 World</button><button id="bI">🇮🇳 India</button><button id="bC">💬 Chat</button><button id="bE">📰 News</button><button id="bQ">🪙 Mission</button><button id="bV">🗳️ Chunav</button><button id="bY">🎮 Khel</button><button id="bM">🌦 Mausam</button><button id="bU">👥 Follow</button><button id="bH">🎣 Machhli</button><button id="bJ">📍 Jao</button></div>
 <div id="bb"></div><div id="ts"></div>
 <div id="pn" class="fx"><div id="ch"></div><div id="rw"><input id="nm" placeholder="Naam / Dukaan / Jagah likho (Enter = Kholo)"><button id="bLoc">📍 Kholo</button><button id="bP">🔓 Open</button></div><small id="st"></small></div>
 <div id="dg"><div><textarea id="ta"></textarea><div style="display:flex;gap:6px;margin-top:8px"><button id="bL">Load</button><button id="bX">Reset</button><button id="bK">Band</button></div></div></div>
@@ -57,18 +57,38 @@ button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
 <button data-k="l">◀</button><button data-k="r">▶</button><button data-k="up">⬆</button><button data-k="dn">⬇</button>
 <button id="gs">Gas</button><button id="bNitro">🚀 Nitro</button><button id="bHorn">📯 Horn</button><button id="bHead">💡 Light</button><button id="bRadio">📻 FM</button><button id="lv">Utro</button>
 </div>
-<div id="gl"><canvas id="gc"></canvas><div class="fx" style="top:calc(env(safe-area-inset-top,0px) + 10px);color:#fff;pointer-events:none;text-shadow:0 2px 8px #000"><b style="font-size:22px">🌎 World</b><small style="display:block">Drag to rotate · pinch to zoom · tap anywhere · tap India to enter</small></div><div id="gp" class="fx"><div id="gi">Globe par kahin bhi tap karo</div><input id="gn" placeholder="Apna naam likho"><div class="rw2"><button id="gb1">🏠 Ghar banao</button><button id="gb2">✈️ Yahan jao</button><button id="gx">Nagri wapas</button></div><div id="gm" class="rw2" style="margin-top:6px"></div></div></div>
+<div id="gl"><canvas id="gc"></canvas><div class="fx" style="top:calc(env(safe-area-inset-top,0px) + 10px);color:#fff;pointer-events:none;text-shadow:0 2px 8px #000"><b style="font-size:22px">🌎 World</b><small style="display:block">Drag to rotate · pinch to zoom · tap anywhere · tap India to enter</small></div><div id="gp" class="fx"><div id="gi">Globe par kahin bhi tap karo</div><input id="gn" placeholder="Apna naam likho"><div class="rw2"><button id="gb1">🏠 Ghar banao</button><button id="gbCity" style="background:#27ae60;color:#fff;font-weight:700">🏙️ 3D City</button><button id="gb2">✈️ Yahan jao</button><button id="gx">Nagri wapas</button></div><div id="gm" class="rw2" style="margin-top:6px"></div></div></div>
 <div id="fo" class="ov"><div class="bx"><b>👥 Follow karo, ghar paao</b><div style="font-size:13px;margin:6px 0">1) Pehle follow karo · 2) Apni Instagram ID likho · 3) Ghar apne aap ban jayega</div><a id="fa" href="https://www.instagram.com/sumitg_2429/" target="_blank" rel="noopener">📸 Follow @sumitg_2429</a><input id="fi" placeholder="Aapki Instagram ID"><button id="fk">🏠 Maine follow kiya, ghar do</button><details style="margin-top:8px;font-size:13px"><summary>Owner: followers ki list paste karo</summary><textarea id="fl" placeholder="Ek line mein ek ID"></textarea><button id="fb2">Sabke ghar banao</button></details><small style="display:block;margin-top:6px;opacity:.7">Instagram follow apne aap check nahi hota (iske liye server chahiye); abhi bharose par ya list paste karke ghar bante hain.</small><button id="fz" style="margin-top:8px">Band karo</button></div></div>
 <div id="fs" class="ov"><div class="bx"><canvas id="fc" width="520" height="260" style="width:100%;height:auto;border-radius:12px"></canvas><div id="ft" style="margin:8px 0;font-size:14px"></div><div class="rw2"><button id="fg">🎣 Dor daalo</button><button id="fq">Band karo</button></div></div></div>
 <div id="jo" class="ov"><div class="bx"><b>📍 Kahan jana hai?</b><div id="jl" class="rw2" style="margin:8px 0"></div><button id="jz">Band karo</button></div></div>
 <canvas id="shm" width="150" height="103"></canvas><div id="shb"><button id="sg1">Gas</button><button data-p="up">⬆</button><button data-p="dn">⬇</button><button id="sw">🪟 Window</button><button id="sl">◀ Left</button><button id="su">🗺 Route</button><button id="sx">Utro</button></div>
-<div id="ia" class="ov" style="z-index:4;background:#a9d4ec;padding:0;flex-direction:column;align-items:center;justify-content:flex-start"><div class="fx" style="top:calc(env(safe-area-inset-top,0px) + 8px);display:flex;gap:6px;flex-wrap:wrap;align-items:center;z-index:5"><b style="color:#1b3b2b;font-size:20px;flex:1">🇮🇳 India</b><button id="iwr">🏆 State War</button><button id="ich">💬 Chat</button><button id="iw">🌎 World</button><button id="ix2">✕</button></div><canvas id="iac" width="560" height="580"></canvas><div class="fx" style="bottom:calc(env(safe-area-inset-bottom,0px) + 10px);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:9px;z-index:5"><div id="iii" style="font-size:13px"></div><div class="rw2"><input id="in1" placeholder="Apna naam"><input id="in2" placeholder="Zila (district)"></div><div class="rw2"><button id="ibk">🏠 Ghar banao</button><span id="ipb" class="rw2"></span></div></div></div>
+<div id="ia" class="ov" style="z-index:4;background:#a9d4ec;padding:0;flex-direction:column;align-items:center;justify-content:flex-start"><div class="fx" style="top:calc(env(safe-area-inset-top,0px) + 8px);display:flex;gap:6px;flex-wrap:wrap;align-items:center;z-index:5"><b style="color:#1b3b2b;font-size:20px;flex:1">🇮🇳 India</b><button id="iwr">🏆 State War</button><button id="ich">💬 Chat</button><button id="iw">🌎 World</button><button id="ix2">✕</button></div><canvas id="iac" width="560" height="580"></canvas><div class="fx" style="bottom:calc(env(safe-area-inset-bottom,0px) + 10px);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:9px;z-index:5"><div id="iii" style="font-size:13px"></div><div class="rw2"><input id="in1" placeholder="Apna naam"><input id="in2" placeholder="Zila (district)"></div><div class="rw2"><button id="ibk">🏠 Ghar banao</button><button id="ibCity" style="background:#27ae60;color:#fff;font-weight:700">🏙️ 3D City Dekho</button><span id="ipb" class="rw2"></span></div></div></div>
 <div id="sw" class="ov"><div class="bx"><b>🏆 State War</b><div style="font-size:12px;opacity:.8">Kis rajya mein sabse zyada ghar? Apne rajya ko jitao, dost bulao!</div><div id="swl"></div><button id="swz" style="margin-top:8px">Band karo</button></div></div>
 <div id="ch2" class="ov" style="z-index:8"><div class="bx"><div id="cht"></div><div id="chl"></div><div id="chq" class="rw2" style="margin-bottom:6px"></div><div class="rw2" style="flex-wrap:nowrap"><input id="chi" placeholder="Message likho..." style="margin:0"><button id="chs">Bhejo</button></div><button id="chz" style="margin-top:8px">Band karo</button></div></div>
 <div id="nw" class="ov" style="z-index:9;background:#efe3c8;padding:0;flex-direction:column;justify-content:space-between;align-items:stretch;color:#1a1a1a"><div style="display:flex;justify-content:space-between;align-items:center;padding:calc(env(safe-area-inset-top,0px) + 10px) 12px 0"><span style="background:#d7263d;color:#fff;font-weight:800;padding:4px 8px;border-radius:4px">SUMIT NEWS</span><span><b style="background:#d7263d;color:#fff;padding:3px 7px;font-size:12px">● LIVE 21:00</b> <small>PARODY</small></span></div><div style="text-align:center"><div style="font-size:12px;font-weight:700">KHABAR WAHI, JO KABHI HUI HI NAHI</div><div id="nr" style="font-size:110px;line-height:1.1">🧐</div><div id="nsc" style="font-size:56px"></div></div><div><div style="background:#fff;border-left:6px solid #d7263d;padding:10px 12px"><div id="nh" style="font-size:22px;font-weight:800"></div><div id="nl" style="font-size:12px;background:#f2b632;padding:3px 6px;margin-top:6px"></div></div><div style="background:#111;color:#fff;overflow:hidden;white-space:nowrap;font-size:13px;padding:6px 0"><span id="nt" style="display:inline-block;padding-left:100%;animation:tk 45s linear infinite"></span></div><button id="nz" style="margin:10px 12px calc(env(safe-area-inset-bottom,0px) + 10px)">Band karo</button></div></div>
 <div id="mi" class="ov"><div class="bx"><b id="mih"></b><div id="mil"></div><b style="display:block;margin-top:8px">🏆 Leaderboard</b><div id="mib" style="font-size:13px;white-space:pre-line"></div><button id="miz" style="margin-top:8px">Band karo</button></div></div>
 <div id="el" class="ov"><div class="bx"><b>🗳️ Sarpanch Chunav (aaj)</b><div id="ell"></div><div id="elw" style="margin-top:6px;font-weight:700"></div><button id="elz" style="margin-top:8px">Band karo</button></div></div>
-<div id="kh" class="ov"><div class="bx"><b>🎮 Khel</b><div id="khk" class="rw2" style="margin:8px 0"></div><div id="khb" style="font-family:monospace;min-height:20px"></div><div id="kha" style="margin:6px 0;font-size:14px"></div><div id="khc" class="rw2"></div><button id="khz" style="margin-top:8px">Band karo</button></div></div>
+<div id="kh" class="ov" style="z-index:9;background:rgba(10,14,24,0.92);padding:8px">
+  <div class="bx" style="width:min(680px,98vw);max-height:95vh;background:#121722;color:#fff;border:1px solid #2a3346;border-radius:18px;padding:12px;display:flex;flex-direction:column;gap:8px">
+    <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #222b3d;padding-bottom:8px">
+      <div style="display:flex;align-items:center;gap:8px">
+        <span style="font-size:24px">🏟️</span>
+        <div>
+          <b style="font-size:16px;color:#ffd700;display:block">NAGARI SPORTS ARENA & STADIUM</b>
+          <small style="color:#8b949e;font-size:11px">Live Interactive Playable Games · Play & Win 🪙 Coins</small>
+        </div>
+      </div>
+      <button id="khz" style="background:#222b3d;color:#fff;border:none;padding:6px 12px">✕ Band</button>
+    </div>
+    <div id="khk" style="display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;white-space:nowrap"></div>
+    <div style="position:relative;background:#0a0d14;border:1px solid #1f2736;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:320px">
+      <canvas id="khCanvas" width="540" height="340" style="max-width:100%;height:auto;display:block;touch-action:none"></canvas>
+      <div id="kha" style="position:absolute;top:8px;left:10px;right:10px;display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:700;color:#ffd700;pointer-events:none;text-shadow:0 1px 4px #000"></div>
+    </div>
+    <div id="khc" class="rw2" style="justify-content:center;gap:8px"></div>
+    <div id="khb" style="font-size:12px;color:#94a3b8;text-align:center"></div>
+  </div>
+</div>
 <div id="tht" class="ov" style="z-index:9;background:#0d0f18;padding:0;flex-direction:column;align-items:stretch">
   <div style="display:flex;justify-content:space-between;align-items:center;padding:calc(env(safe-area-inset-top,0px) + 8px) 14px 8px;background:#161928;border-bottom:1px solid #2a2e45">
     <div style="display:flex;align-items:center;gap:8px">
@@ -124,6 +144,35 @@ button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
   <div id="bkMsg" style="font-size:13px;color:#e8892b;margin:6px 0"></div>
   <button id="bkClose" style="margin-top:8px">Band karo</button>
 </div></div>
+<div id="reModal" class="ov" style="z-index:9;background:#0d1117;padding:0;flex-direction:column;align-items:stretch">
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:calc(env(safe-area-inset-top,0px) + 8px) 14px 8px;background:#161b22;border-bottom:1px solid #30363d;z-index:2">
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="font-size:24px" id="reFlag">🏙️</span>
+      <div>
+        <b style="color:#ffd700;font-size:16px;display:block" id="reTitle">MUMBAI REAL ESTATE CITY · 3D</b>
+        <small style="color:#8b949e;font-size:11px" id="reSub">Marine Drive Sky Towers · Luxury High-Rise Living · Population 2.1 Cr</small>
+      </div>
+    </div>
+    <div style="display:flex;gap:6px">
+      <button id="reDriveBtn" style="background:#238636;color:#fff;font-weight:700">🚗 Drive Car</button>
+      <button id="reClose" style="background:#21262d;color:#fff">✕</button>
+    </div>
+  </div>
+  <div style="position:relative;flex:1;overflow:hidden">
+    <canvas id="rec" style="width:100%;height:100%;display:block"></canvas>
+    <div style="position:absolute;top:10px;left:10px;right:10px;display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;z-index:2" id="reCityBar"></div>
+    <div style="position:absolute;bottom:12px;left:12px;right:12px;background:rgba(22,27,34,0.92);backdrop-filter:blur(10px);border:1px solid #30363d;border-radius:14px;padding:12px;z-index:2;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+      <div>
+        <div style="font-weight:700;color:#58a6ff;font-size:14px" id="rePropName">Marine Drive Sea-Facing Penthouse 402</div>
+        <div style="font-size:12px;color:#c9d1d9" id="rePropRate">Rate: ₹48,000/sq.ft · Price: 🪙50 Coins · Rental: 🪙15/day</div>
+      </div>
+      <div style="display:flex;gap:8px">
+        <button id="reBuyBtn" style="background:linear-gradient(45deg,#f39c12,#e67e22);color:#fff;font-weight:800;border:none;border-radius:10px;padding:8px 14px">🏠 Kharido (🪙50)</button>
+        <button id="reRentBtn" style="background:#1f6feb;color:#fff;font-weight:700;border:none;border-radius:10px;padding:8px 12px">💰 Kiraya Lo</button>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 const T=THREE,S=5,PI=Math.PI,$=id=>document.getElementById(id);
@@ -329,13 +378,16 @@ function searchAndOpen(q){
  }
  if(!hit&&(q.includes('mall')||q.includes('shopping')))hit={x:-34,z:-58,k:'shop',n:'Sumit Mall'};
  if(!hit&&(q.includes('beach')||q.includes('samundar')))hit={x:0,z:81,k:'beach',n:'Beach'};
- if(!hit&&(q.includes('stadium')||q.includes('cricket')||q.includes('match')))hit={x:-32,z:32,k:'match',n:'Stadium'};
+ if(!hit&&(q.includes('stadium')||q.includes('cricket')||q.includes('match')||q.includes('khel')||q.includes('chess')||q.includes('ludo')||q.includes('carrom')||q.includes('football')||q.includes('hockey')||q.includes('gilli')||q.includes('kanche')||q.includes('tennis')))hit={x:-32,z:32,k:'match',n:'Nagari Stadium Sports Arena'};
+ if(!hit&&(q.includes('real estate')||q.includes('3d city')||q.includes('city')||q.includes('building')||q.includes('mumbai')||q.includes('delhi')||q.includes('dubai')||q.includes('newyork')||q.includes('tokyo')||q.includes('paris')||q.includes('london')))hit={k:'realestate',n:'3D Real Estate City'};
  if(!hit&&(q.includes('airport')||q.includes('jahaj')||q.includes('flight')||q.includes('plane')))hit={x:-80,z:0,k:'airport',n:'Airport'};
  if(!hit&&(q.includes('heli')))hit={x:82,z:-8,k:'heli',n:'Heli Station'};
  if(!hit&&(q.includes('train')||q.includes('rail')||q.includes('station')))hit={x:0,z:55,k:'station',n:'Sumit Ki Nagari Jn'};
  if(!hit&&(q.includes('metro')))hit={x:70,z:16,k:'metro',n:'Metro Station'};
  if(!hit&&(q.includes('mela')))hit={x:-62,z:35,k:'mela',n:'Mela Ground'};
  if(hit){
+  if(hit.k==='realestate'){openCityRealEstate();return}
+  if(hit.k==='match'){openSportsArena();return}
   tg.set(hit.x,0,hit.z);dist=28;ph=.95;auto=false;
   toast('📍 '+(hit.n||hit.k)+' par pahunch gaye!');
   if(hit.g&&hit.g.userData&&hit.g.userData.o)openItemDetail(hit.g.userData.o,hit.g);
@@ -425,6 +477,15 @@ function snd(type){
     g.gain.setValueAtTime(0,t);g.gain.setValueAtTime(.18,t+i*.12);g.gain.exponentialRampToValueAtTime(.001,t+i*.12+.3);
     o.connect(g);g.connect(ctx.destination);o.start(t+i*.12);o.stop(t+i*.12+.35);
    });
+  }else if(type==='hit'){
+   const o=ctx.createOscillator(),g=ctx.createGain();o.type='triangle';o.frequency.setValueAtTime(600,t);
+   o.frequency.exponentialRampToValueAtTime(80,t+.1);g.gain.setValueAtTime(.28,t);g.gain.linearRampToValueAtTime(.001,t+.1);
+   o.connect(g);g.connect(ctx.destination);o.start(t);o.stop(t+.1);
+  }else if(type==='dice'){
+   for(let i=0;i<5;i++){setTimeout(()=>{if(!sndOn)return;const o=ctx.createOscillator(),g=ctx.createGain();o.type='square';o.frequency.setValueAtTime(300+i*60,ctx.currentTime);g.gain.setValueAtTime(.12,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.04);o.connect(g);g.connect(ctx.destination);o.start(ctx.currentTime);o.stop(ctx.currentTime+.05)},i*35)}
+  }else if(type==='whistle'){
+   const o=ctx.createOscillator(),g=ctx.createGain();o.type='sine';o.frequency.setValueAtTime(2400,t);o.frequency.setValueAtTime(2800,t+.12);
+   g.gain.setValueAtTime(.2,t);g.gain.exponentialRampToValueAtTime(.001,t+.3);o.connect(g);g.connect(ctx.destination);o.start(t);o.stop(t+.32);
   }else if(type==='clap'){
    for(let i=0;i<4;i++){setTimeout(()=>{if(!sndOn)return;const buf=ctx.createBuffer(1,ctx.sampleRate*.06,ctx.sampleRate),d=buf.getChannelData(0);for(let j=0;j<d.length;j++)d[j]=(Math.random()*2-1);const s=ctx.createBufferSource(),g=ctx.createGain();s.buffer=buf;g.gain.setValueAtTime(.2,ctx.currentTime);g.connect(ctx.destination);s.connect(g);s.start()},i*70)}
   }
@@ -633,7 +694,7 @@ function explore2(e){setRay(e);const hv=a=>ray.intersectObjects(a,true)[0];
  const cMeshes=allCars.map(c=>c.g);h=drv?null:hv(cMeshes);if(h){let g=h.object;while(g.parent&&!cMeshes.includes(g))g=g.parent;const cd=allCars.find(c=>c.g===g);if(cd){board(cd);return}}
  const vs=Object.values(V).map(v=>v.g);h=drv?null:hv(vs);if(h){let g=h.object;while(g.parent&&!vs.includes(g))g=g.parent;board(Object.values(V).find(v=>v.g===g));return}
  h=hv(items.map(o=>o.g));if(h){let g=h.object;while(g&&!g.userData.o)g=g.parent;if(g){openItemDetail(g.userData.o,g);return}}
- h=hv(hot);if(h){tg.set(h.object.position.x,0,h.object.position.z);dist=35;ph=.95;auto=false;sc2(h.object.userData.hot.k,h.object.userData.hot.t)}}
+ h=hv(hot);if(h){if(h.object.userData.hot.k==='match'){openSportsArena();return}tg.set(h.object.position.x,0,h.object.position.z);dist=35;ph=.95;auto=false;sc2(h.object.userData.hot.k,h.object.userData.hot.t)}}
 // har frame
 function step(dt,t){stepG(dt);stepW(dt,t);stepI(dt,t);
  trv.forEach(o=>{if(o.w>0){o.w-=dt;o.H.aL.rotation.x=o.H.aR.rotation.x=0;return}o.t+=o.d*2*dt/o.a.distanceTo(o.b);if(o.t>1||o.t<0){o.d=-o.d;o.t=Math.max(0,Math.min(1,o.t));o.w=1.5}
@@ -814,13 +875,1207 @@ setInterval(()=>{if(shu.on)psd=1;MIS.forEach(m=>{if(prog(m[0])>=m[2]&&!mst.done.
 let elx={d:day,v:{},my:0};try{const e=JSON.parse(localStorage.getItem('snk_el')||'null');if(e&&e.d===day)elx=e}catch(e){}
 function rel(){const C=[...new Set(ih.filter(h=>h.me).map(h=>h.nm).concat(NAMES.slice(0,4)))].slice(0,5),L=$('ell'),T=C.map(n=>(elx.v[n]||0)+hsh(n+day)%20),mx=Math.max(...T);L.textContent='';C.forEach((n,i)=>{const r=document.createElement('div');r.style.cssText='margin:6px 0;font-size:13px';r.textContent=(T[i]===mx?'🏅 ':'')+'@'+n+' · '+T[i]+' vote  ';mkb(elx.my?'Vote ho chuka':'🗳️ Vote',()=>{if(elx.my){toast('Aaj ek hi vote');return}elx.v[n]=(elx.v[n]||0)+1;elx.my=1;mst.coins+=5;sv();try{localStorage.setItem('snk_el',JSON.stringify(elx))}catch(e){}rel();toast('🗳️ Vote diya · 🪙 +5')},r);L.appendChild(r)});$('elw').textContent='Aaj ka Sarpanch: @'+C[T.indexOf(mx)]+' 🏅'}
 $('bV').onclick=()=>{rel();$('el').style.display='flex'};$('elz').onclick=()=>$('el').style.display='none';
-// khel
-let khT=null;const kha=$('kha'),khc=$('khc'),khb=$('khb');
-function gdone(n,msg){pl2++;mst.coins+=n;sv();kha.textContent=msg+' · 🪙 +'+n;clearInterval(khT)}
-function gGilli(){clearInterval(khT);let b=0,x=0,tr=3,m=0;khc.textContent='';kha.textContent='Marker beech mein ho tab Danda maaro (3 mauke)';khT=setInterval(()=>{x+=.05;m=Math.abs(x%2-1);const p=Math.round(m*24);khb.textContent='·'.repeat(p)+'●'+'·'.repeat(24-p)},30);mkb('🏑 Danda maaro',()=>{if(!tr)return;const d=Math.round(60*(1-Math.abs(m-.5)*2));b=Math.max(b,d);tr--;kha.textContent='Gilli '+d+' gaz gayi! Best '+b+' · mauke '+tr;if(!tr){khc.textContent='';gdone(Math.round(b/6),'Khel khatam, best '+b+' gaz')}},khc)}
-function gKushti(){clearInterval(khT);let p=0,t=6,ai=18+Math.random()*16;khc.textContent='';kha.textContent='6 second mein Zor lagao dabate raho!';khb.textContent='';mkb('💪 Zor lagao!',()=>{p++;khb.textContent='Aap '+p+' vs Pahalwan '+Math.round(ai*(1-t/6))},khc);khT=setInterval(()=>{t-=.1;if(t<=0){khc.textContent='';gdone(p>ai?15:3,p>ai?'🏆 Aap jeete! '+p+' vs '+Math.round(ai):'Pahalwan jeeta '+Math.round(ai)+' vs '+p)}},100)}
-function gPen(k){clearInterval(khT);let s=0,g=0;khc.textContent='';khb.textContent='';kha.textContent=k+' penalty: 5 shot, disha chuno';[['⬅️',0],['⬆️',1],['➡️',2]].forEach(([l,d])=>mkb(l,()=>{if(s>=5)return;const kp=Math.random()*3|0,go=kp!==d||Math.random()<.2;s++;if(go)g++;kha.textContent=(go?'🥅 GOAL! ':'🧤 Bacha liya! ')+g+'/'+s;if(s>=5){khc.textContent='';gdone(g*4,'Khatam: '+g+'/5 goal')}},khc))}
-[['🏑 Gilli Danda',gGilli],['🤼 Kushti',gKushti],['⚽ Football',()=>gPen('Football')],['🏒 Hockey',()=>gPen('Hockey')]].forEach(g=>mkb(g[0],g[1],$('khk')));$('bY').onclick=()=>{khc.textContent='';khb.textContent='';kha.textContent='Khel chuno';$('kh').style.display='flex'};$('khz').onclick=()=>{$('kh').style.display='none';clearInterval(khT)};
+// ======== NAYA 7B: Sports Arena (Real Playable Games in Stadium) & 3D Real Estate City ========
+let curGame='chess',khAnimId=null;
+const khcv=$('khCanvas'),khx=khcv.getContext('2d'),kha=$('kha'),khc=$('khc'),khb=$('khb');
+let khPointer={down:false,x:0,y:0,sx:0,sy:0};
+
+function gdone(n,msg){pl2++;mst.coins+=n;sv();kha.textContent=msg+' · 🪙 +'+n;snd('fanfare');toast(msg+' · 🪙 +'+n)}
+
+// Game States
+const GM={
+ chess:{
+  board:[],sel:null,moves:[],turn:'w',captures:{w:[],b:[]},msg:'Aapki chaal (White) · Piece par tap karein',
+  init(){
+   this.turn='w';this.sel=null;this.moves=[];this.captures={w:[],b:[]};this.msg='Aapki chaal (White) · Piece par tap karein';
+   const b=[
+    ['♜','♞','♝','♛','♚','♝','♞','♜'],
+    ['♟','♟','♟','♟','♟','♟','♟','♟'],
+    ['','','','','','','',''],
+    ['','','','','','','',''],
+    ['','','','','','','',''],
+    ['','','','','','','',''],
+    ['♙','♙','♙','♙','♙','♙','♙','♙'],
+    ['♖','♘','♗','♕','♔','♗','♘','♖']
+   ];
+   this.board=b;
+   khc.textContent='';khb.textContent='Chess Match: @'+(meNm||'Aap')+' (White) vs Nagari AI (Black)';
+   mkb('🔄 Naya Match',()=>this.init(),khc);
+   mkb('🏳️ Draw Maango',()=>{this.msg='🤝 Match Draw ho gaya!';snd('clap');toast('Chess Draw · 🪙 +5');mst.coins+=5;sv()},khc);
+  },
+  isWhite(p){return '♙♖♘♗♕♔'.includes(p)},
+  isBlack(p){return '♟♜♞♝♛♚'.includes(p)},
+  getLegalMoves(r,c){
+   const p=this.board[r][c],m=[];if(!p)return m;
+   const isW=this.isWhite(p);
+   const add=(nr,nc)=>{
+    if(nr<0||nr>7||nc<0||nc>7)return false;
+    const t=this.board[nr][nc];
+    if(!t){m.push([nr,nc]);return true}
+    if(isW?!this.isWhite(t):!this.isBlack(t)){m.push([nr,nc])}
+    return false;
+   };
+   if(p==='♙'){
+    if(r>0&&!this.board[r-1][c])m.push([r-1,c]);
+    if(r===6&&!this.board[5][c]&&!this.board[4][c])m.push([4,c]);
+    if(r>0&&c>0&&this.isBlack(this.board[r-1][c-1]))m.push([r-1,c-1]);
+    if(r>0&&c<7&&this.isBlack(this.board[r-1][c+1]))m.push([r-1,c+1]);
+   }else if(p==='♟'){
+    if(r<7&&!this.board[r+1][c])m.push([r+1,c]);
+    if(r===1&&!this.board[2][c]&&!this.board[3][c])m.push([3,c]);
+    if(r<7&&c>0&&this.isWhite(this.board[r+1][c-1]))m.push([r+1,c-1]);
+    if(r<7&&c<7&&this.isWhite(this.board[r+1][c+1]))m.push([r+1,c+1]);
+   }else if(p==='♘'||p==='♞'){
+    [[-2,-1],[-2,1],[-1,-2],[-1,2],[1,-2],[1,2],[2,-1],[2,1]].forEach(([dr,dc])=>add(r+dr,c+dc));
+   }else if(p==='♖'||p==='♜'){
+    [[0,1],[0,-1],[1,0],[-1,0]].forEach(([dr,dc])=>{for(let k=1;k<8;k++)if(!add(r+dr*k,c+dc*k))break});
+   }else if(p==='♗'||p==='♝'){
+    [[1,1],[1,-1],[-1,1],[-1,-1]].forEach(([dr,dc])=>{for(let k=1;k<8;k++)if(!add(r+dr*k,c+dc*k))break});
+   }else if(p==='♕'||p==='♛'){
+    [[0,1],[0,-1],[1,0],[-1,0],[1,1],[1,-1],[-1,1],[-1,-1]].forEach(([dr,dc])=>{for(let k=1;k<8;k++)if(!add(r+dr*k,c+dc*k))break});
+   }else if(p==='♔'||p==='♚'){
+    [[0,1],[0,-1],[1,0],[-1,0],[1,1],[1,-1],[-1,1],[-1,-1]].forEach(([dr,dc])=>add(r+dr,c+dc));
+   }
+   return m;
+  },
+  aiMove(){
+   const bm=[];
+   for(let r=0;r<8;r++)for(let c=0;c<8;c++){
+    const p=this.board[r][c];
+    if(p&&this.isBlack(p)){
+     const lm=this.getLegalMoves(r,c);
+     lm.forEach(([tr,tc])=>{
+      const cap=this.board[tr][tc];
+      const val=cap?10+Math.random()*5:Math.random();
+      bm.push({fr:r,fc:c,tr,tc,val,cap});
+     });
+    }
+   }
+   if(!bm.length){this.msg='🏆 Checkmate! Aap jeet gaye!';gdone(25,'Chess Champion Checkmate');return}
+   bm.sort((a,b)=>b.val-a.val);
+   const mv=bm[0];
+   const piece=this.board[mv.fr][mv.fc],tgt=this.board[mv.tr][mv.tc];
+   if(tgt)this.captures.b.push(tgt);
+   this.board[mv.tr][mv.tc]=piece;
+   this.board[mv.fr][mv.fc]='';
+   snd(tgt?'clap':'hit');
+   this.turn='w';
+   this.msg='Aapki chaal (White) · Piece par tap karein';
+  },
+  click(x,y){
+   if(this.turn!=='w')return;
+   const sz=36,ox=65,oy=25;
+   const c=Math.floor((x-ox)/sz),r=Math.floor((y-oy)/sz);
+   if(r<0||r>7||c<0||c>7)return;
+   if(this.sel){
+    const isLegal=this.moves.some(([mr,mc])=>mr===r&&mc===c);
+    if(isLegal){
+     const p=this.board[this.sel[0]][this.sel[1]],tgt=this.board[r][c];
+     if(tgt)this.captures.w.push(tgt);
+     this.board[r][c]=p;
+     this.board[this.sel[0]][this.sel[1]]='';
+     snd(tgt?'coin':'hit');
+     this.sel=null;this.moves=[];
+     this.turn='b';
+     this.msg='Nagari AI soch raha hai... 🤖';
+     setTimeout(()=>this.aiMove(),450);
+     return;
+    }
+   }
+   const p=this.board[r][c];
+   if(p&&this.isWhite(p)){
+    this.sel=[r,c];
+    this.moves=this.getLegalMoves(r,c);
+    this.msg='Chaal chuniye (hare nishan par tap karein)';
+   }else{
+    this.sel=null;this.moves=[];
+   }
+  },
+  draw(ctx,W,H){
+   ctx.fillStyle='#0f141f';ctx.fillRect(0,0,W,H);
+   const sz=36,ox=65,oy=25;
+   for(let r=0;r<8;r++){
+    for(let c=0;c<8;c++){
+     const isLight=(r+c)%2===0;
+     ctx.fillStyle=isLight?'#f0d9b5':'#b58863';
+     if(this.sel&&this.sel[0]===r&&this.sel[1]===c)ctx.fillStyle='#f6e58d';
+     ctx.fillRect(ox+c*sz,oy+r*sz,sz,sz);
+     if(this.moves.some(([mr,mc])=>mr===r&&mc===c)){
+      ctx.fillStyle='rgba(46,204,113,0.65)';
+      ctx.beginPath();ctx.arc(ox+c*sz+sz/2,oy+r*sz+sz/2,sz*0.22,0,Math.PI*2);ctx.fill();
+     }
+     const p=this.board[r][c];
+     if(p){
+      ctx.fillStyle=this.isWhite(p)?'#ffffff':'#1a1a1a';
+      ctx.strokeStyle=this.isWhite(p)?'#333333':'#ffffff';
+      ctx.font='28px serif';ctx.textAlign='center';ctx.textBaseline='middle';
+      ctx.lineWidth=1;
+      ctx.strokeText(p,ox+c*sz+sz/2,oy+r*sz+sz/2);
+      ctx.fillText(p,ox+c*sz+sz/2,oy+r*sz+sz/2);
+     }
+    }
+   }
+   ctx.fillStyle='#888';ctx.font='11px sans-serif';ctx.textAlign='center';
+   'ABCDEFGH'.split('').forEach((l,i)=>ctx.fillText(l,ox+i*sz+sz/2,oy+8*sz+14));
+   '87654321'.split('').forEach((n,i)=>ctx.fillText(n,ox-14,oy+i*sz+sz/2));
+   // Side scoreboard
+   ctx.fillStyle='#161d2d';ctx.fillRect(380,20,145,295);
+   ctx.strokeStyle='#2e3a52';ctx.strokeRect(380,20,145,295);
+   ctx.fillStyle='#ffd700';ctx.font='bold 14px sans-serif';ctx.textAlign='left';
+   ctx.fillText('♟️ CHESS ARENA',392,44);
+   ctx.font='12px sans-serif';ctx.fillStyle='#cbd5e1';
+   ctx.fillText('White: @'+(meNm||'Aap'),392,72);
+   ctx.fillText('Captured: '+(this.captures.w.join(' ')||'None'),392,94);
+   ctx.fillStyle='#94a3b8';
+   ctx.fillText('Black: Nagari AI 🤖',392,130);
+   ctx.fillText('Captured: '+(this.captures.b.join(' ')||'None'),392,152);
+   ctx.fillStyle='#f1c40f';ctx.font='bold 11px sans-serif';
+   ctx.fillText(this.msg.slice(0,22),392,200);
+   if(this.msg.length>22)ctx.fillText(this.msg.slice(22),392,216);
+   ctx.fillStyle='#10b981';ctx.fillText('Win Prize: 🪙 +25',392,280);
+  }
+ },
+
+ ludo:{
+  dice:1,rolling:false,rollAnim:0,turn:'user',pPos:[0,0,0,0],aiPos:[0,0,0,0],score:0,msg:'Dice phenko! (🎲 Roll dabao)',
+  init(){
+   this.dice=Math.floor(Math.random()*6)+1;this.rolling=false;this.turn='user';this.pPos=[0,0,0,0];this.aiPos=[0,0,0,0];this.score=0;this.msg='Dice phenko! (🎲 Roll dabao)';
+   khc.textContent='';khb.textContent='Ludo Arena: Red (@'+(meNm||'Aap')+') vs Blue (Nagari Bot)';
+   mkb('🎲 Roll Dice',()=>{this.roll()},khc);
+   mkb('🚀 Auto Play',()=>{this.autoTurn()},khc);
+  },
+  roll(){
+   if(this.rolling)return;
+   this.rolling=true;this.rollAnim=0;snd('dice');
+   const iv=setInterval(()=>{
+    this.dice=Math.floor(Math.random()*6)+1;
+    this.rollAnim++;
+    if(this.rollAnim>8){
+     clearInterval(iv);this.rolling=false;
+     this.handleMove();
+    }
+   },45);
+  },
+  handleMove(){
+   if(this.turn==='user'){
+    let moved=false;
+    for(let i=0;i<4;i++){
+     if(this.pPos[i]===0&&this.dice===6){this.pPos[i]=1;moved=true;this.msg='Red Token ghar se bahar nikla!';snd('fanfare');break}
+     else if(this.pPos[i]>0&&this.pPos[i]+this.dice<=56){this.pPos[i]+=this.dice;moved=true;snd('hit');
+      if(this.pPos[i]===56){this.score++;gdone(20,'🎉 Red Token Home pahuncha!');}
+      break}
+    }
+    if(!moved)this.msg='Is baari koi move nahi mili!';
+    this.turn='ai';
+    setTimeout(()=>this.aiTurn(),800);
+   }
+  },
+  aiTurn(){
+   if(this.turn!=='ai')return;
+   this.dice=Math.floor(Math.random()*6)+1;snd('dice');
+   let moved=false;
+   for(let i=0;i<4;i++){
+    if(this.aiPos[i]===0&&this.dice===6){this.aiPos[i]=1;moved=true;break}
+    else if(this.aiPos[i]>0&&this.aiPos[i]+this.dice<=56){this.aiPos[i]+=this.dice;moved=true;break}
+   }
+   this.turn='user';
+   this.msg='Aapki baari! 🎲 Roll dabao (Last roll: '+this.dice+')';
+  },
+  autoTurn(){if(!this.rolling)this.roll()},
+  click(x,y){
+   if(x>380&&x<500&&y>180&&y<270)this.roll();
+  },
+  draw(ctx,W,H){
+   ctx.fillStyle='#0f172a';ctx.fillRect(0,0,W,H);
+   const bx=30,by=25,bs=280;
+   ctx.fillStyle='#f8fafc';ctx.fillRect(bx,by,bs,bs);
+   const cs=bs/15;
+   // Quadrants
+   ctx.fillStyle='#ef4444';ctx.fillRect(bx,by+9*cs,6*cs,6*cs); // Red User
+   ctx.fillStyle='#10b981';ctx.fillRect(bx,by,6*cs,6*cs); // Green
+   ctx.fillStyle='#3b82f6';ctx.fillRect(bx+9*cs,by,6*cs,6*cs); // Blue AI
+   ctx.fillStyle='#f59e0b';ctx.fillRect(bx+9*cs,by+9*cs,6*cs,6*cs); // Yellow
+   // Center Home
+   ctx.beginPath();ctx.moveTo(bx+6*cs,by+6*cs);ctx.lineTo(bx+9*cs,by+6*cs);ctx.lineTo(bx+7.5*cs,by+7.5*cs);ctx.fillStyle='#3b82f6';ctx.fill();
+   ctx.beginPath();ctx.moveTo(bx+6*cs,by+9*cs);ctx.lineTo(bx+9*cs,by+9*cs);ctx.lineTo(bx+7.5*cs,by+7.5*cs);ctx.fillStyle='#ef4444';ctx.fill();
+   // Paths
+   ctx.fillStyle='#fee2e2';for(let i=1;i<6;i++)ctx.fillRect(bx+7*cs,by+(14-i)*cs,cs,cs);
+   ctx.fillStyle='#dbeafe';for(let i=1;i<6;i++)ctx.fillRect(bx+7*cs,by+i*cs,cs,cs);
+   // Draw Tokens
+   this.pPos.forEach((p,i)=>{
+    ctx.fillStyle='#b91c1c';ctx.beginPath();
+    const tx=p===0?bx+(1.5+i%2*2)*cs:bx+(7)*cs,ty=p===0?by+(10.5+Math.floor(i/2)*2)*cs:by+(14-Math.min(5,p%14))*cs;
+    ctx.arc(tx,ty,cs*0.4,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#ffffff';ctx.font='bold 11px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('R'+(i+1),tx,ty);
+   });
+   this.aiPos.forEach((p,i)=>{
+    ctx.fillStyle='#1d4ed8';ctx.beginPath();
+    const tx=p===0?bx+(10.5+i%2*2)*cs:bx+(7)*cs,ty=p===0?by+(1.5+Math.floor(i/2)*2)*cs:by+(Math.min(5,p%14))*cs;
+    ctx.arc(tx,ty,cs*0.4,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#ffffff';ctx.font='bold 11px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('B'+(i+1),tx,ty);
+   });
+   // 3D Dice Display Box
+   ctx.fillStyle='#1e293b';ctx.fillRect(340,30,180,270);
+   ctx.strokeStyle='#475569';ctx.strokeRect(340,30,180,270);
+   ctx.fillStyle='#fbbf24';ctx.font='bold 16px sans-serif';ctx.textAlign='center';
+   ctx.fillText('🎲 LUDO ROYALE',430,60);
+   ctx.font='12px sans-serif';ctx.fillStyle='#cbd5e1';
+   ctx.fillText(this.msg,430,90);
+   // Big Rolling 3D Dice
+   const dx=395,dy=130,ds=70;
+   ctx.fillStyle='#ffffff';ctx.beginPath();ctx.roundRect?ctx.roundRect(dx,dy,ds,ds,14):ctx.rect(dx,dy,ds,ds);ctx.fill();
+   ctx.strokeStyle='#94a3b8';ctx.lineWidth=3;ctx.stroke();
+   // Dice dots
+   ctx.fillStyle=this.turn==='user'?'#dc2626':'#2563eb';
+   const dot=(cx,cy)=>{ctx.beginPath();ctx.arc(cx,cy,5.5,0,Math.PI*2);ctx.fill()};
+   const d=this.dice,mx=dx+ds/2,my=dy+ds/2,lx=dx+18,rx=dx+ds-18,ty=dy+18,by2=dy+ds-18;
+   if(d%2===1)dot(mx,my);
+   if(d>1){dot(lx,ty);dot(rx,by2)}
+   if(d>3){dot(rx,ty);dot(lx,by2)}
+   if(d===6){dot(lx,my);dot(rx,my)}
+   ctx.font='bold 12px sans-serif';ctx.fillStyle='#38bdf8';
+   ctx.fillText('Tap dice to Roll 🎲',430,230);
+   ctx.fillStyle='#4ade80';ctx.fillText('Tokens Home: '+this.score+'/4 · 🪙 +20',430,265);
+  }
+ },
+
+ carrom:{
+  striker:{x:270,y:260,r:16,vx:0,vy:0,active:false},
+  coins:[],score:0,queen:true,aiming:false,aimAngle:0,aimPower:0,
+  init(){
+   this.score=0;this.queen=true;this.coins=[];this.striker={x:270,y:260,r:16,vx:0,vy:0,active:false};
+   const r=10;
+   // Center pieces
+   this.coins.push({x:270,y:170,r,c:'#ef4444',type:'queen',val:25}); // Queen
+   for(let i=0;i<8;i++){
+    const a=i*Math.PI/4,d=22;
+    this.coins.push({x:270+Math.cos(a)*d,y:170+Math.sin(a)*d,r,c:i%2?'#ffffff':'#1e293b',type:i%2?'white':'black',val:i%2?10:5});
+   }
+   khc.textContent='';khb.textContent='Striker drag karke kheecho aur chhod kar nishana maaro!';
+   mkb('🎯 Reset Striker',()=>{this.resetStriker()},khc);
+   mkb('🔄 Naya Board',()=>this.init(),khc);
+  },
+  resetStriker(){this.striker.x=270;this.striker.y=260;this.striker.vx=0;this.striker.vy=0;this.striker.active=false},
+  down(x,y){
+   if(Math.hypot(x-this.striker.x,y-this.striker.y)<28&&!this.striker.active){
+    this.aiming=true;khPointer.sx=x;khPointer.sy=y;
+   }
+  },
+  move(x,y){
+   if(this.aiming){
+    const dx=khPointer.sx-x,dy=khPointer.sy-y;
+    this.aimAngle=Math.atan2(dy,dx);
+    this.aimPower=Math.min(22,Math.hypot(dx,dy)*0.25);
+   }
+  },
+  up(x,y){
+   if(this.aiming&&this.aimPower>1){
+    this.striker.vx=Math.cos(this.aimAngle)*this.aimPower;
+    this.striker.vy=Math.sin(this.aimAngle)*this.aimPower;
+    this.striker.active=true;
+    snd('hit');
+   }
+   this.aiming=false;
+  },
+  update(){
+   // Physics step
+   const st=this.striker;
+   if(st.active){
+    st.x+=st.vx;st.y+=st.vy;st.vx*=0.975;st.vy*=0.975;
+    if(st.x<150||st.x>390){st.vx=-st.vx;st.x=Math.max(150,Math.min(390,st.x));snd('hit')}
+    if(st.y<50||st.y>290){st.vy=-st.vy;st.y=Math.max(50,Math.min(290,st.y));snd('hit')}
+    if(Math.hypot(st.vx,st.vy)<0.2){st.vx=0;st.vy=0;st.active=false;this.resetStriker()}
+   }
+   const pockets=[{x:150,y:50},{x:390,y:50},{x:150,y:290},{x:390,y:290}];
+   // Coins update
+   this.coins.forEach((c,idx)=>{
+    if(c.vx||c.vy){
+     c.x+=c.vx;c.y+=c.vy;c.vx*=0.975;c.vy*=0.975;
+     if(c.x<150||c.x>390){c.vx=-c.vx;snd('hit')}
+     if(c.y<50||c.y>290){c.vy=-c.vy;snd('hit')}
+    }
+    // Check pocket
+    pockets.forEach(p=>{
+     if(Math.hypot(c.x-p.x,c.y-p.y)<18){
+      this.score+=c.val;snd('coin');
+      if(c.type==='queen')gdone(25,'👑 CARROM QUEEN POCKETED!');
+      else toast('⚪ Coin Pocket! +'+c.val+' pts');
+      this.coins.splice(idx,1);
+     }
+    });
+    // Collision with striker
+    const d=Math.hypot(c.x-st.x,c.y-st.y);
+    if(d<st.r+c.r&&d>0){
+     const nx=(c.x-st.x)/d,ny=(c.y-st.y)/d;
+     const kx=st.vx-c.vx,ky=st.vy-c.vy,p=2*(nx*kx+ny*ky)/2;
+     st.vx-=p*nx*0.6;st.vy-=p*ny*0.6;
+     c.vx=(c.vx||0)+p*nx*0.8;c.vy=(c.vy||0)+p*ny*0.8;
+     snd('hit');
+    }
+   });
+  },
+  draw(ctx,W,H){
+   this.update();
+   ctx.fillStyle='#111827';ctx.fillRect(0,0,W,H);
+   // Carrom board wood
+   ctx.fillStyle='#e5c07b';ctx.fillRect(130,30,280,280);
+   ctx.strokeStyle='#8b5a2b';ctx.lineWidth=12;ctx.strokeRect(130,30,280,280);
+   // Pockets
+   ctx.fillStyle='#111111';
+   [[145,45],[395,45],[145,295],[395,295]].forEach(([px,py])=>{
+    ctx.beginPath();ctx.arc(px,py,16,0,Math.PI*2);ctx.fill();
+   });
+   // Center circle
+   ctx.strokeStyle='#d97706';ctx.lineWidth=2;
+   ctx.beginPath();ctx.arc(270,170,36,0,Math.PI*2);ctx.stroke();
+   // Baselines
+   ctx.strokeStyle='#92400e';ctx.lineWidth=1.5;
+   ctx.strokeRect(170,250,200,20);
+   ctx.strokeRect(170,70,200,20);
+   // Aiming line
+   if(this.aiming){
+    ctx.strokeStyle='#10b981';ctx.lineWidth=3;ctx.beginPath();
+    ctx.moveTo(this.striker.x,this.striker.y);
+    ctx.lineTo(this.striker.x+Math.cos(this.aimAngle)*this.aimPower*8,this.striker.y+Math.sin(this.aimAngle)*this.aimPower*8);
+    ctx.stroke();
+   }
+   // Striker
+   ctx.fillStyle='#f59e0b';ctx.beginPath();ctx.arc(this.striker.x,this.striker.y,this.striker.r,0,Math.PI*2);ctx.fill();
+   ctx.strokeStyle='#ffffff';ctx.lineWidth=2;ctx.stroke();
+   // Coins
+   this.coins.forEach(c=>{
+    ctx.fillStyle=c.c;ctx.beginPath();ctx.arc(c.x,c.y,c.r,0,Math.PI*2);ctx.fill();
+    ctx.strokeStyle=c.type==='black'?'#64748b':'#000000';ctx.lineWidth=1.5;ctx.stroke();
+   });
+   // Side Score
+   ctx.fillStyle='#1f2937';ctx.fillRect(10,40,110,260);
+   ctx.strokeStyle='#374151';ctx.strokeRect(10,40,110,260);
+   ctx.fillStyle='#ffd700';ctx.font='bold 13px sans-serif';ctx.textAlign='center';
+   ctx.fillText('⚪ CARROM',65,65);
+   ctx.fillStyle='#cbd5e1';ctx.font='12px sans-serif';
+   ctx.fillText('Score: '+this.score,65,100);
+   ctx.fillText('Coins: '+this.coins.length,65,130);
+   ctx.fillStyle='#10b981';ctx.fillText('Drag & Aim',65,180);
+   ctx.fillText('Release Shot!',65,200);
+  }
+ },
+
+ football:{
+  goalie:{x:270,y:170,w:36,h:55,targetX:270,dive:0},
+  ball:{x:270,y:290,r:14,vx:0,vy:0,vz:0,z:0,kicked:false},
+  shots:0,goals:0,curAim:{x:270,y:150},
+  init(){
+   this.shots=0;this.goals=0;this.resetBall();
+   khc.textContent='';khb.textContent='Goalpost par nishana lagakar Shoot dabayein! (5 Penalty Shots)';
+   mkb('⚽ SHOOT',()=>{this.shoot()},khc);
+   mkb('🔄 Reset Round',()=>this.init(),khc);
+  },
+  resetBall(){
+   this.ball={x:270,y:290,r:14,vx:0,vy:0,vz:0,z:0,kicked:false};
+   this.goalie.dive=0;this.goalie.x=270;this.goalie.targetX=270;
+  },
+  shoot(){
+   if(this.ball.kicked||this.shots>=5)return;
+   this.ball.kicked=true;this.shots++;
+   const dx=this.curAim.x-270,dy=this.curAim.y-290;
+   this.ball.vx=dx*0.065;this.ball.vy=dy*0.065;this.ball.vz=0.08;
+   snd('hit');
+   // Goalie AI reaction
+   const goalieChoices=[160,270,380];
+   this.goalie.targetX=goalieChoices[Math.floor(Math.random()*3)];
+   this.goalie.dive=(this.goalie.targetX-270)*0.08;
+   setTimeout(()=>{
+    const isSave=Math.abs(this.ball.x-this.goalie.targetX)<38;
+    if(!isSave&&this.ball.x>130&&this.ball.x<410&&this.ball.y>90&&this.ball.y<210){
+     this.goals++;snd('fanfare');toast('🥅 GOOOAAALLLL!! Superb strike!');
+    }else{
+     snd('clap');toast('🧤 Goalkeeper saved!');
+    }
+    if(this.shots>=5){
+     gdone(this.goals*6,'Penalty Shootout Khatam: '+this.goals+'/5 Goals!');
+    }else{
+     setTimeout(()=>this.resetBall(),1000);
+    }
+   },650);
+  },
+  click(x,y){
+   if(x>120&&x<420&&y>80&&y<220){
+    this.curAim.x=x;this.curAim.y=y;
+    this.shoot();
+   }
+  },
+  draw(ctx,W,H){
+   // Turf
+   ctx.fillStyle='#15803d';ctx.fillRect(0,0,W,H);
+   // Penalty box lines
+   ctx.strokeStyle='#ffffff';ctx.lineWidth=3;
+   ctx.strokeRect(100,80,340,160);
+   // Goalposts
+   ctx.strokeStyle='#ffffff';ctx.lineWidth=7;
+   ctx.strokeRect(130,90,280,120);
+   // Net mesh
+   ctx.strokeStyle='rgba(255,255,255,0.22)';ctx.lineWidth=1;
+   for(let x=130;x<=410;x+=16){ctx.beginPath();ctx.moveTo(x,90);ctx.lineTo(x,210);ctx.stroke()}
+   for(let y=90;y<=210;y+=14){ctx.beginPath();ctx.moveTo(130,y);ctx.lineTo(410,y);ctx.stroke()}
+   // Crosshair Aim
+   ctx.strokeStyle='#facc15';ctx.lineWidth=2;
+   ctx.beginPath();ctx.arc(this.curAim.x,this.curAim.y,12,0,Math.PI*2);ctx.stroke();
+   // Goalkeeper
+   const gx=this.goalie.x;
+   ctx.fillStyle='#f97316';ctx.fillRect(gx-16,130,32,48); // jersey
+   ctx.fillStyle='#ffffff';ctx.fillRect(gx-24,120,48,12); // arms
+   ctx.fillStyle='#fed7aa';ctx.beginPath();ctx.arc(gx,115,12,0,Math.PI*2);ctx.fill(); // head
+   // Ball
+   if(this.ball.kicked){
+    this.ball.x+=this.ball.vx;this.ball.y+=this.ball.vy;
+    this.ball.r=Math.max(8,14-this.ball.vz*40);
+   }
+   ctx.fillStyle='#ffffff';ctx.beginPath();ctx.arc(this.ball.x,this.ball.y,this.ball.r,0,Math.PI*2);ctx.fill();
+   ctx.strokeStyle='#1e293b';ctx.lineWidth=2;ctx.stroke();
+   // Score Header
+   ctx.fillStyle='#ffd700';ctx.font='bold 16px sans-serif';ctx.textAlign='center';
+   ctx.fillText('⚽ FOOTBALL PENALTY · '+this.goals+' / '+this.shots+' GOALS',W/2,32);
+  }
+ },
+
+ hockey:{
+  goalie:{x:270,targetX:270},
+  puck:{x:270,y:290,vx:0,vy:0,active:false},
+  score:0,shots:0,
+  init(){
+   this.score=0;this.shots=0;this.resetPuck();
+   khc.textContent='';khb.textContent='Hockey D-line se Slap shot maaro! (5 Mauke)';
+   mkb('🏑 SLAP SHOT',()=>{this.hit()},khc);
+   mkb('🔄 Reset',()=>this.init(),khc);
+  },
+  resetPuck(){this.puck={x:270,y:290,vx:0,vy:0,active:false};this.goalie.x=270},
+  hit(){
+   if(this.puck.active||this.shots>=5)return;
+   this.puck.active=true;this.shots++;
+   const targetX=180+Math.random()*180;
+   this.puck.vx=(targetX-270)*0.07;this.puck.vy=-9.5;snd('hit');
+   this.goalie.targetX=Math.random()<0.5?targetX:270;
+   setTimeout(()=>{
+    const isSaved=Math.abs(this.puck.x-this.goalie.targetX)<32;
+    if(!isSaved&&this.puck.x>150&&this.puck.x<390){
+     this.score++;snd('fanfare');toast('🏑 GOAL! Spectacular Hockey Slap Shot!');
+    }else{
+     snd('clap');toast('🧤 Hockey Goalie pad save!');
+    }
+    if(this.shots>=5){
+     gdone(this.score*5,'Hockey Shootout Completed: '+this.score+'/5 Goals!');
+    }else{
+     setTimeout(()=>this.resetPuck(),900);
+    }
+   },500);
+  },
+  click(x,y){this.hit()},
+  draw(ctx,W,H){
+   // Astro turf
+   ctx.fillStyle='#0284c7';ctx.fillRect(0,0,W,H);
+   // Striking circle D
+   ctx.strokeStyle='#ffffff';ctx.lineWidth=3;
+   ctx.beginPath();ctx.arc(270,120,120,0,Math.PI);ctx.stroke();
+   // Hockey Goalpost
+   ctx.strokeStyle='#ffffff';ctx.lineWidth=6;
+   ctx.strokeRect(170,80,200,80);
+   // Goalie
+   ctx.fillStyle='#e11d48';ctx.fillRect(this.goalie.x-18,105,36,44);
+   ctx.fillStyle='#fef08a';ctx.fillRect(this.goalie.x-28,125,56,12); // goalie pads
+   // Puck
+   if(this.puck.active){this.puck.x+=this.puck.vx;this.puck.y+=this.puck.vy}
+   ctx.fillStyle='#0f172a';ctx.beginPath();ctx.arc(this.puck.x,this.puck.y,9,0,Math.PI*2);ctx.fill();
+   ctx.strokeStyle='#ffffff';ctx.lineWidth=1.5;ctx.stroke();
+   // Score Header
+   ctx.fillStyle='#ffd700';ctx.font='bold 16px sans-serif';ctx.textAlign='center';
+   ctx.fillText('🏑 HOCKEY STADIUM SHOOTOUT · '+this.score+' / '+this.shots,W/2,32);
+  }
+ },
+
+ cricket:{
+  ball:{x:270,y:90,r:6,vy:0,vx:0,bowled:false},
+  runs:0,wickets:0,balls:0,timing:0,commentary:'Bowler run-up par hai... Shot timing karein!',
+  init(){
+   this.runs=0;this.wickets=0;this.balls=0;this.commentary='Over shuru! Green timing aane par 🏏 HIT SHOT dabayein!';
+   this.resetBall();
+   khc.textContent='';khb.textContent='Timing ring green ho tab bat ghumayein! 6 balls / 1 Over Match';
+   mkb('🏏 HIT SHOT',()=>{this.hitShot()},khc);
+   mkb('🔄 Naya Over',()=>this.init(),khc);
+  },
+  resetBall(){
+   this.ball={x:270,y:90,r:6,vy:0,vx:0,bowled:false};
+   setTimeout(()=>{if(this.balls<6)this.bowlBall()},1000);
+  },
+  bowlBall(){
+   this.ball.bowled=true;this.ball.vy=4.2+Math.random()*1.5;this.ball.vx=(Math.random()-0.5)*1.2;
+   snd('whistle');
+  },
+  hitShot(){
+   if(!this.ball.bowled||this.balls>=6)return;
+   this.balls++;
+   const dist=Math.abs(this.ball.y-255);
+   let r=0;
+   if(dist<12){r=6;snd('fanfare');this.commentary='🚀 TOWERING SIXER OUT OF NAGARI STADIUM!! 105m!'}
+   else if(dist<25){r=4;snd('clap');this.commentary='⚡ ROCKET COVER DRIVE! CRACKING 4 RUNS!'}
+   else if(dist<42){r=Math.random()<0.5?1:2;snd('hit');this.commentary='Quick single run! +'+r}
+   else{r=0;this.wickets++;snd('clap');this.commentary='💥 BOWLED! Middle stump knocked out!'}
+   this.runs+=r;
+   if(this.balls>=6){
+    gdone(Math.round(this.runs*1.5),'Over Khatam: '+this.runs+' Runs ('+this.wickets+' Wickets)!');
+   }else{
+    this.resetBall();
+   }
+  },
+  click(x,y){this.hitShot()},
+  draw(ctx,W,H){
+   // Grass & pitch
+   ctx.fillStyle='#2e7d32';ctx.fillRect(0,0,W,H);
+   // Brown Pitch
+   ctx.fillStyle='#d7ccc8';ctx.fillRect(235,70,70,220);
+   ctx.strokeStyle='#ffffff';ctx.lineWidth=2;
+   // Crease lines
+   ctx.beginPath();ctx.moveTo(225,255);ctx.lineTo(315,255);ctx.stroke();
+   ctx.beginPath();ctx.moveTo(225,100);ctx.lineTo(315,100);ctx.stroke();
+   // Stumps
+   ctx.fillStyle='#ffb300';
+   for(let i=-1;i<=1;i++){ctx.fillRect(270+i*6-1.5,82,3,18);ctx.fillRect(270+i*6-1.5,255,3,18)}
+   // Ball
+   if(this.ball.bowled){
+    this.ball.y+=this.ball.vy;this.ball.x+=this.ball.vx;
+    this.ball.r=6+(this.ball.y-90)*0.04;
+    // Timing Circle
+    const dist=Math.abs(this.ball.y-255);
+    ctx.strokeStyle=dist<15?'#22c55e':dist<30?'#eab308':'#ef4444';
+    ctx.lineWidth=3;ctx.beginPath();ctx.arc(this.ball.x,this.ball.y,this.ball.r+8,0,Math.PI*2);ctx.stroke();
+   }
+   ctx.fillStyle='#dc2626';ctx.beginPath();ctx.arc(this.ball.x,this.ball.y,this.ball.r,0,Math.PI*2);ctx.fill();
+   // Scoreboard HUD
+   ctx.fillStyle='#0f172a';ctx.fillRect(15,12,W-30,42);
+   ctx.strokeStyle='#334155';ctx.strokeRect(15,12,W-30,42);
+   ctx.fillStyle='#facc15';ctx.font='bold 16px sans-serif';ctx.textAlign='left';
+   ctx.fillText('🏏 SCORE: '+this.runs+' / '+this.wickets+' ('+this.balls+'/6 b)',30,38);
+   ctx.font='12px sans-serif';ctx.fillStyle='#38bdf8';ctx.textAlign='right';
+   ctx.fillText(this.commentary.slice(0,34),W-30,38);
+  }
+ },
+
+ gilli:{
+  state:'ready',gilliY:280,gilliVy:0,spin:0,best:0,gaz:0,
+  init(){
+   this.state='ready';this.gilliY=280;this.gilliVy=0;this.spin=0;this.best=0;this.gaz=0;
+   khc.textContent='';khb.textContent='Pehle 🏑 TIP karein, hawa mein aate hi 💥 SWING karein!';
+   mkb('🏑 TIP GILLI',()=>{this.tip()},khc);
+   mkb('💥 SWING DANDA',()=>{this.swing()},khc);
+  },
+  tip(){
+   if(this.state!=='ready')return;
+   this.state='air';this.gilliVy=-7.5;snd('hit');
+   toast('Gilli hawa mein! Ab SWING danda maaro!');
+  },
+  swing(){
+   if(this.state!=='air')return;
+   const sweet=Math.abs(this.gilliY-180);
+   if(sweet<30){
+    const d=Math.round(80-sweet*1.5+Math.random()*15);
+    this.gaz=d;this.best=Math.max(this.best,d);
+    snd('fanfare');toast('💥 ZABARDAST SHOT! Gilli '+d+' gaz gayi!');
+    gdone(Math.round(d/4),'Desi Gilli Danda: '+d+' Gaz!');
+   }else{
+    this.gaz=Math.round(20+Math.random()*15);
+    snd('hit');toast('Miss-hit! Gilli '+this.gaz+' gaz gayi.');
+   }
+   this.state='ready';this.gilliY=280;
+  },
+  click(x,y){
+   if(this.state==='ready')this.tip();
+   else if(this.state==='air')this.swing();
+  },
+  draw(ctx,W,H){
+   ctx.fillStyle='#ca8a04';ctx.fillRect(0,0,W,H); // Dirt field
+   // Pitch circle
+   ctx.strokeStyle='#a16207';ctx.lineWidth=4;ctx.beginPath();ctx.arc(270,220,120,0,Math.PI*2);ctx.stroke();
+   // Gilli physics
+   if(this.state==='air'){
+    this.gilliY+=this.gilliVy;this.gilliVy+=0.22;this.spin+=0.2;
+    if(this.gilliY>280){this.gilliY=280;this.state='ready';toast('Gilli zameen par gir gayi, dobara tip karein');}
+   }
+   // Strike zone line
+   ctx.strokeStyle='rgba(255,255,255,0.4)';ctx.lineWidth=2;
+   ctx.beginPath();ctx.moveTo(180,180);ctx.lineTo(360,180);ctx.stroke();
+   // Gilli drawing
+   ctx.save();ctx.translate(270,this.gilliY);ctx.rotate(this.spin);
+   ctx.fillStyle='#78350f';ctx.beginPath();ctx.moveTo(-20,0);ctx.lineTo(-12,-6);ctx.lineTo(12,-6);ctx.lineTo(20,0);ctx.lineTo(12,6);ctx.lineTo(-12,6);ctx.closePath();ctx.fill();
+   ctx.restore();
+   // Danda in hand
+   ctx.fillStyle='#92400e';ctx.fillRect(295,210,12,70);
+   // Header
+   ctx.fillStyle='#ffd700';ctx.font='bold 16px sans-serif';ctx.textAlign='center';
+   ctx.fillText('🏑 DESI GILLI DANDA · BEST: '+this.best+' GAZ',W/2,32);
+  }
+ },
+
+ kanche:{
+  marbles:[],aiming:false,striker:{x:270,y:280,vx:0,vy:0,active:false},score:0,
+  init(){
+   this.score=0;this.striker={x:270,y:280,vx:0,vy:0,active:false};this.marbles=[];
+   const colors=['#38bdf8','#f43f5e','#a855f7','#22c55e','#f59e0b'];
+   for(let i=0;i<7;i++){
+    const a=i*Math.PI*2/7,r=35+Math.random()*15;
+    this.marbles.push({x:270+Math.cos(a)*r,y:150+Math.sin(a)*r,vx:0,vy:0,c:colors[i%colors.length]});
+   }
+   khc.textContent='';khb.textContent='Kancha kheecho aur goli circle se bahar nikaalo!';
+   mkb('🎯 Reset Kancha',()=>{this.striker={x:270,y:280,vx:0,vy:0,active:false}},khc);
+   mkb('🔄 Naye Kanche',()=>this.init(),khc);
+  },
+  down(x,y){
+   if(Math.hypot(x-this.striker.x,y-this.striker.y)<25&&!this.striker.active){
+    this.aiming=true;khPointer.sx=x;khPointer.sy=y;
+   }
+  },
+  move(x,y){
+   if(this.aiming){
+    this.aimAngle=Math.atan2(khPointer.sy-y,khPointer.sx-x);
+    this.aimPower=Math.min(20,Math.hypot(khPointer.sx-x,khPointer.sy-y)*0.25);
+   }
+  },
+  up(x,y){
+   if(this.aiming&&this.aimPower>1){
+    this.striker.vx=Math.cos(this.aimAngle)*this.aimPower;
+    this.striker.vy=Math.sin(this.aimAngle)*this.aimPower;
+    this.striker.active=true;snd('hit');
+   }
+   this.aiming=false;
+  },
+  update(){
+   const st=this.striker;
+   if(st.active){
+    st.x+=st.vx;st.y+=st.vy;st.vx*=0.96;st.vy*=0.96;
+    if(Math.hypot(st.vx,st.vy)<0.2){st.active=false;st.x=270;st.y=280}
+   }
+   this.marbles.forEach((m,idx)=>{
+    m.x+=m.vx;m.y+=m.vy;m.vx*=0.96;m.vy*=0.96;
+    const d=Math.hypot(m.x-st.x,m.y-st.y);
+    if(d<22&&d>0){
+     m.vx=(m.x-st.x)*0.35;m.vy=(m.y-st.y)*0.35;
+     st.vx*=0.4;st.vy*=0.4;snd('coin');
+    }
+    // Out of circle check
+    if(Math.hypot(m.x-270,m.y-150)>95){
+     this.score++;this.marbles.splice(idx,1);
+     snd('fanfare');toast('⚪ Kancha Ring se bahar! 🪙 +5 Coins');mst.coins+=5;sv();
+     if(!this.marbles.length)gdone(25,'🏆 Sabhi Kanche Jeete!');
+    }
+   });
+  },
+  draw(ctx,W,H){
+   this.update();
+   ctx.fillStyle='#b45309';ctx.fillRect(0,0,W,H); // Sand ring ground
+   // Circle
+   ctx.strokeStyle='#fef08a';ctx.lineWidth=3;
+   ctx.beginPath();ctx.arc(270,150,90,0,Math.PI*2);ctx.stroke();
+   // Marbles
+   this.marbles.forEach(m=>{
+    ctx.fillStyle=m.c;ctx.beginPath();ctx.arc(m.x,m.y,9,0,Math.PI*2);ctx.fill();
+    ctx.strokeStyle='#ffffff';ctx.lineWidth=1.5;ctx.stroke();
+   });
+   // Striker
+   ctx.fillStyle='#38bdf8';ctx.beginPath();ctx.arc(this.striker.x,this.striker.y,12,0,Math.PI*2);ctx.fill();
+   ctx.strokeStyle='#ffffff';ctx.lineWidth=2;ctx.stroke();
+   // Aim
+   if(this.aiming){
+    ctx.strokeStyle='#facc15';ctx.lineWidth=2.5;ctx.beginPath();
+    ctx.moveTo(this.striker.x,this.striker.y);
+    ctx.lineTo(this.striker.x+Math.cos(this.aimAngle)*this.aimPower*7,this.striker.y+Math.sin(this.aimAngle)*this.aimPower*7);
+    ctx.stroke();
+   }
+   ctx.fillStyle='#ffd700';ctx.font='bold 16px sans-serif';ctx.textAlign='center';
+   ctx.fillText('⚪ DESI KANCHE · SCORE: '+this.score+' / 7',W/2,32);
+  }
+ },
+
+ tennis:{
+  ball:{x:270,y:170,vx:2.5,vy:4.5,r:8},
+  playerX:270,aiX:270,score:[0,0],rally:0,
+  init(){
+   this.ball={x:270,y:170,vx:2.5,vy:4.5,r:8};this.playerX=270;this.aiX=270;this.score=[0,0];this.rally=0;
+   khc.textContent='';khb.textContent='Racket mouse/touch se hilayein aur ball return karein!';
+   mkb('🔄 Naya Match',()=>this.init(),khc);
+  },
+  move(x,y){this.playerX=Math.max(140,Math.min(400,x))},
+  update(){
+   const b=this.ball;b.x+=b.vx;b.y+=b.vy;
+   if(b.x<130||b.x>410){b.vx=-b.vx;snd('hit')}
+   // AI racket tracking
+   this.aiX+=(b.x-this.aiX)*0.09;
+   // Hit player racket
+   if(b.y>280&&b.y<295&&Math.abs(b.x-this.playerX)<45){
+    b.vy=-Math.abs(b.vy)*1.02;b.vx=(b.x-this.playerX)*0.16;
+    this.rally++;snd('hit');
+   }
+   // Hit AI racket
+   if(b.y<65&&b.y>50&&Math.abs(b.x-this.aiX)<45){
+    b.vy=Math.abs(b.vy)*1.02;snd('hit');
+   }
+   // Out of bounds
+   if(b.y>315){
+    this.score[1]+=15;this.resetBall(-1);
+   }else if(b.y<35){
+    this.score[0]+=15;this.resetBall(1);
+    if(this.score[0]>=40)gdone(20,'🎾 Tennis Match Game Won!');
+   }
+  },
+  resetBall(dir){
+   this.ball={x:270,y:170,vx:(Math.random()-0.5)*4,vy:dir*4,r:8};this.rally=0;
+  },
+  draw(ctx,W,H){
+   this.update();
+   ctx.fillStyle='#0284c7';ctx.fillRect(0,0,W,H); // Blue hard court
+   // White lines
+   ctx.strokeStyle='#ffffff';ctx.lineWidth=2.5;
+   ctx.strokeRect(120,40,300,260);
+   // Net
+   ctx.strokeStyle='#f8fafc';ctx.lineWidth=4;
+   ctx.beginPath();ctx.moveTo(110,170);ctx.lineTo(430,170);ctx.stroke();
+   // Player Racket
+   ctx.fillStyle='#ef4444';ctx.fillRect(this.playerX-35,285,70,8);
+   // AI Racket
+   ctx.fillStyle='#3b82f6';ctx.fillRect(this.aiX-35,50,70,8);
+   // Ball
+   ctx.fillStyle='#facc15';ctx.beginPath();ctx.arc(this.ball.x,this.ball.y,this.ball.r,0,Math.PI*2);ctx.fill();
+   // Score HUD
+   ctx.fillStyle='#ffd700';ctx.font='bold 16px sans-serif';ctx.textAlign='center';
+   ctx.fillText('🎾 TENNIS ARENA · '+this.score[0]+' - '+this.score[1]+' (Rally: '+this.rally+')',W/2,30);
+  }
+ },
+
+ kushti:{
+  p:0,ai:25,t:6,active:false,iv:null,
+  init(){
+   this.p=0;this.ai=25;this.t=6;this.active=false;clearInterval(this.iv);
+   khc.textContent='';khb.textContent='6 second mein "💪 Zor lagao" jitni baar ho sake dabayein!';
+   mkb('💪 ZOR LAGAO!',()=>{this.tap()},khc);
+  },
+  tap(){
+   if(!this.active){
+    this.active=true;
+    this.iv=setInterval(()=>{
+     this.t-=0.1;
+     if(this.t<=0){
+      clearInterval(this.iv);this.active=false;
+      gdone(this.p>this.ai?20:5,this.p>this.ai?'🏆 Pahalwan ko pachhada! Score: '+this.p:'Pahalwan jeeta! Score: '+this.p);
+     }
+    },100);
+   }
+   this.p++;snd('hit');
+  },
+  draw(ctx,W,H){
+   ctx.fillStyle='#9a3412';ctx.fillRect(0,0,W,H); // Akhada mud
+   ctx.strokeStyle='#fed7aa';ctx.lineWidth=6;ctx.beginPath();ctx.arc(W/2,H/2,110,0,Math.PI*2);ctx.stroke();
+   ctx.fillStyle='#ffffff';ctx.font='bold 20px sans-serif';ctx.textAlign='center';
+   ctx.fillText('🤼 AKHADA KUSHTI CHAMPIONSHIP',W/2,50);
+   ctx.font='16px sans-serif';ctx.fillStyle='#fef08a';
+   ctx.fillText('Aapka Zor: '+this.p+'  vs  Pahalwan: '+Math.round(this.ai*(1-this.t/6)),W/2,120);
+   ctx.fillStyle='#38bdf8';ctx.font='bold 24px sans-serif';
+   ctx.fillText('Time: '+Math.max(0,this.t).toFixed(1)+'s',W/2,180);
+   ctx.font='14px sans-serif';ctx.fillStyle='#cbd5e1';
+   ctx.fillText('Neeche button par tezi se tap karein!',W/2,240);
+  }
+ }
+};
+
+function sportsLoop(){
+ if($('kh').style.display==='flex'){
+  if(GM[curGame]&&GM[curGame].draw)GM[curGame].draw(khx,540,340);
+  khAnimId=requestAnimationFrame(sportsLoop);
+ }
+}
+
+function setGame(id){
+ curGame=id;
+ document.querySelectorAll('#khk button').forEach(b=>b.classList.toggle('on',b.dataset.game===id));
+ if(GM[id]&&GM[id].init)GM[id].init();
+}
+
+function openSportsArena(initialGame='chess'){
+ tg.set(-32,0,32);dist=34;ph=0.85;auto=false;
+ $('kh').style.display='flex';
+ const tabList=[
+  ['chess','♟️ चेस (Chess)'],['ludo','🎲 लूडो (Ludo)'],['carrom','⚪ कैरम (Carrom)'],
+  ['football','⚽ फुटबॉल (Football)'],['hockey','🏑 हॉकी (Hockey)'],['cricket','🏏 क्रिकेट (Cricket)'],
+  ['gilli','🏑 गुल्ली डंडा (Gilli)'],['kanche','⚪ कंचे (Kanche)'],['tennis','🎾 टेनिस (Tennis)'],['kushti','🤼 कुश्ती (Kushti)']
+ ];
+ const kt=$('khk');kt.textContent='';
+ tabList.forEach(([gid,lbl])=>{
+  const b=document.createElement('button');b.textContent=lbl;b.dataset.game=gid;
+  b.onclick=()=>setGame(gid);
+  kt.appendChild(b);
+ });
+ setGame(initialGame);
+ cancelAnimationFrame(khAnimId);
+ khAnimId=requestAnimationFrame(sportsLoop);
+ snd('fanfare');
+ toast('🏟️ Nagari Sports Arena Stadium mein swagat hai!');
+}
+
+khcv.addEventListener('pointerdown',e=>{
+ const r=khcv.getBoundingClientRect();
+ const x=(e.clientX-r.left)/r.width*540,y=(e.clientY-r.top)/r.height*340;
+ khPointer.down=true;khPointer.x=x;khPointer.y=y;
+ const g=GM[curGame];
+ if(g&&g.down)g.down(x,y);
+ if(g&&g.click)g.click(x,y);
+});
+khcv.addEventListener('pointermove',e=>{
+ const r=khcv.getBoundingClientRect();
+ const x=(e.clientX-r.left)/r.width*540,y=(e.clientY-r.top)/r.height*340;
+ const g=GM[curGame];
+ if(g&&g.move)g.move(x,y);
+});
+window.addEventListener('pointerup',e=>{
+ khPointer.down=false;
+ const g=GM[curGame];
+ if(g&&g.up)g.up(khPointer.x,khPointer.y);
+});
+$('bY').onclick=()=>openSportsArena('chess');
+$('khz').onclick=()=>{cancelAnimationFrame(khAnimId);$('kh').style.display='none'};
+
+// ======== NAYA 7C: 3D Real Estate City Explorer ========
+const RE_CITIES={
+ mumbai:{
+  name:'Mumbai · Marine Drive Sky City',flag:'🏙️',sub:'Sea-Facing Luxury Towers · Arabian Sea Promenade · Pop 2.1 Cr',
+  sky:0x7ec8e3,ground:0x228b22,water:true,carColor:0xf1c40f,
+  props:[
+   {n:'Marine Drive Sea-Facing Penthouse 402',rate:'₹48,000/sq.ft',price:50,rent:15,x:-16,z:-12,w:8,h:26,d:8,c:0xe0e6ed},
+   {n:'Worli Sea-View Luxury Sky Villa 12',rate:'₹55,000/sq.ft',price:75,rent:25,x:16,z:-16,w:8,h:34,d:8,c:0xd1e7dd},
+   {n:'Bandra Pali Hill Duplex Apartment 5B',rate:'₹42,000/sq.ft',price:40,rent:12,x:-22,z:12,w:7,h:18,d:7,c:0xf8d7da},
+   {n:'Juhu Beach Luxury Bungalow plot 8',rate:'₹62,000/sq.ft',price:90,rent:30,x:20,z:14,w:10,h:12,d:10,c:0xfff3cd},
+   {n:'Nariman Point Commercial Office Suite',rate:'₹50,000/sq.ft',price:60,rent:20,x:0,z:-24,w:9,h:40,d:9,c:0xcff4fc}
+  ]
+ },
+ delhi:{
+  name:'Delhi · Rajpath Capital City',flag:'🏛️',sub:'India Gate Avenues · Lutyens Heritage Mansions · Metro Lines',
+  sky:0x93c5fd,ground:0x15803d,water:false,carColor:0xffffff,
+  props:[
+   {n:'Lutyens Bunglow Heritage Estate 7',rate:'₹65,000/sq.ft',price:95,rent:35,x:-18,z:-14,w:9,h:12,d:9,c:0xf5c6cb},
+   {n:'Connaught Place Business Plaza 104',rate:'₹45,000/sq.ft',price:65,rent:22,x:18,z:-16,w:8,h:22,d:8,c:0xfff3cd},
+   {n:'South Ex Super Luxury Floor 3',rate:'₹32,000/sq.ft',price:45,rent:14,x:-20,z:16,w:7,h:16,d:7,c:0xd1e7dd},
+   {n:'Aerocity High-Rise Suites 208',rate:'₹38,000/sq.ft',price:55,rent:18,x:20,z:16,w:8,h:28,d:8,c:0xcff4fc}
+  ]
+ },
+ bengaluru:{
+  name:'Bengaluru · Silicon IT Metropolis',flag:'💻',sub:'Electronic City Tech Towers · Cyber Hubs · Green Campus',
+  sky:0x67e8f9,ground:0x16a34a,water:false,carColor:0x3b82f6,
+  props:[
+   {n:'Whitefield IT Cyber Tower Penthouse',rate:'₹18,000/sq.ft',price:40,rent:12,x:-18,z:-16,w:8,h:32,d:8,c:0xcff4fc},
+   {n:'Indiranagar Smart Villa 88',rate:'₹28,000/sq.ft',price:60,rent:20,x:18,z:-14,w:8,h:14,d:8,c:0xd1e7dd},
+   {n:'Koramangala Tech Startup Mansion',rate:'₹35,000/sq.ft',price:70,rent:24,x:-20,z:18,w:7,h:18,d:7,c:0xfff3cd},
+   {n:'MG Road Metro Commercial Hub',rate:'₹32,000/sq.ft',price:65,rent:22,x:20,z:18,w:8,h:34,d:8,c:0xe2e3e5}
+  ]
+ },
+ jaipur:{
+  name:'Jaipur · Pink City Royal Heritage',flag:'🏰',sub:'Hawa Mahal Arches · Royal Haveli Estates · Heritage Courtyards',
+  sky:0xfbcfe8,ground:0xb45309,water:false,carColor:0xd97706,
+  props:[
+   {n:'Amer Fort Heritage Royal Haveli 2',rate:'₹22,000/sq.ft',price:55,rent:18,x:-18,z:-16,w:9,h:15,d:9,c:0xf8d7da},
+   {n:'Civil Lines Luxury Raj Palace',rate:'₹26,000/sq.ft',price:60,rent:20,x:18,z:-14,w:8,h:16,d:8,c:0xffe5d0},
+   {n:'C-Scheme Royal Penthouse 501',rate:'₹20,000/sq.ft',price:45,rent:14,x:-20,z:18,w:7,h:20,d:7,c:0xf5c6cb},
+   {n:'MI Road Heritage Commercial Showroom',rate:'₹24,000/sq.ft',price:50,rent:16,x:20,z:18,w:8,h:18,d:8,c:0xfff3cd}
+  ]
+ },
+ goa:{
+  name:'Goa · Calangute Coastal Paradise',flag:'🏖️',sub:'Beachfront Villas · Palm Groves · Arabian Sea Breeze',
+  sky:0x38bdf8,ground:0xfacc15,water:true,carColor:0xef4444,
+  props:[
+   {n:'Calangute Oceanfront Beach Villa 1',rate:'₹38,000/sq.ft',price:75,rent:26,x:-18,z:-14,w:8,h:12,d:8,c:0xfff3cd},
+   {n:'Candolim Sunset Luxury Resort Suite',rate:'₹34,000/sq.ft',price:60,rent:20,x:18,z:-16,w:8,h:14,d:8,c:0xd1e7dd},
+   {n:'Anjuna Hilltop Portuguese Bungalow',rate:'₹30,000/sq.ft',price:50,rent:16,x:-20,z:18,w:7,h:12,d:7,c:0xf8d7da},
+   {n:'Panaji Riverfront Marina Penthouse',rate:'₹32,000/sq.ft',price:55,rent:18,x:20,z:18,w:8,h:20,d:8,c:0xcff4fc}
+  ]
+ },
+ dubai:{
+  name:'Dubai · Mega Burj Spire City',flag:'🇦🇪',sub:'Burj Khalifa Sky Towers · Gold Palm Island · Supercar Boulevard',
+  sky:0xfef08a,ground:0xd97706,water:true,carColor:0xffd700,
+  props:[
+   {n:'Downtown Burj Khalifa Sky Penthouse 88',rate:'₹85,000/sq.ft',price:120,rent:45,x:0,z:-24,w:10,h:65,d:10,c:0xffd700},
+   {n:'Palm Jumeirah Ultra Luxury Beachfront Villa',rate:'₹90,000/sq.ft',price:130,rent:50,x:-22,z:-14,w:9,h:14,d:9,c:0xfff3cd},
+   {n:'Dubai Marina Yacht-Facing Duplex',rate:'₹70,000/sq.ft',price:90,rent:32,x:22,z:-14,w:8,h:42,d:8,c:0xcff4fc},
+   {n:'Sheikh Zayed Road Commercial Tower 40',rate:'₹65,000/sq.ft',price:85,rent:30,x:-20,z:18,w:8,h:48,d:8,c:0xd1e7dd}
+  ]
+ },
+ newyork:{
+  name:'New York · Manhattan Sky Grid',flag:'🇺🇸',sub:'Empire Sky Needle · Times Square Neon · Central Park View',
+  sky:0x334155,ground:0x1e293b,water:true,carColor:0xfacc15,
+  props:[
+   {n:'Manhattan 5th Avenue Penthouse 60',rate:'₹95,000/sq.ft',price:140,rent:55,x:-18,z:-16,w:9,h:52,d:9,c:0xcff4fc},
+   {n:'Wall Street Financial Tower Suite',rate:'₹80,000/sq.ft',price:110,rent:40,x:18,z:-16,w:9,h:46,d:9,c:0xe2e3e5},
+   {n:'Brooklyn Brownstone Luxury Townhouse',rate:'₹60,000/sq.ft',price:75,rent:25,x:-20,z:18,w:8,h:16,d:8,c:0xf8d7da},
+   {n:'Times Square Broadway Neon Skydeck',rate:'₹88,000/sq.ft',price:115,rent:42,x:20,z:18,w:8,h:44,d:8,c:0xfff3cd}
+  ]
+ },
+ tokyo:{
+  name:'Tokyo · Shinjuku Cyber Metropolis',flag:'🇯🇵',sub:'Tokyo Sky Tower · Neon Cyber Avenues · Sakura Trees',
+  sky:0x312e81,ground:0x1e1b4b,water:false,carColor:0xec4899,
+  props:[
+   {n:'Shinjuku Neon High-Rise Penthouse 48',rate:'₹72,000/sq.ft',price:95,rent:34,x:-18,z:-16,w:8,h:45,d:8,c:0xcff4fc},
+   {n:'Ginza Ultra Luxury Commercial Showroom',rate:'₹85,000/sq.ft',price:115,rent:42,x:18,z:-16,w:8,h:32,d:8,c:0xfff3cd},
+   {n:'Roppongi Hills Modern Smart Residence',rate:'₹68,000/sq.ft',price:90,rent:30,x:-20,z:18,w:7,h:36,d:7,c:0xd1e7dd},
+   {n:'Shibuya Crossing Tower Sky Office',rate:'₹75,000/sq.ft',price:100,rent:36,x:20,z:18,w:8,h:40,d:8,c:0xf8d7da}
+  ]
+ },
+ paris:{
+  name:'Paris · Eiffel Heritage Capital',flag:'🇫🇷',sub:'Haussmann Mansard Boulevards · Seine Riverbank · Cafe Terraces',
+  sky:0xbfdbfe,ground:0x3f6212,water:true,carColor:0x38bdf8,
+  props:[
+   {n:'Champs-Élysées Luxury Haussmann Flat',rate:'₹65,000/sq.ft',price:85,rent:30,x:-18,z:-16,w:8,h:18,d:8,c:0xfff3cd},
+   {n:'Eiffel Tower View Royal Penthouse',rate:'₹82,000/sq.ft',price:110,rent:40,x:18,z:-16,w:8,h:22,d:8,c:0xcff4fc},
+   {n:'Seine Riverfront Classic Residence',rate:'₹58,000/sq.ft',price:75,rent:25,x:-20,z:18,w:7,h:16,d:7,c:0xd1e7dd},
+   {n:'Montmartre Artists Historic Villa',rate:'₹50,000/sq.ft',price:65,rent:22,x:20,z:18,w:7,h:14,d:7,c:0xf8d7da}
+  ]
+ },
+ london:{
+  name:'London · Thames Imperial Capital',flag:'🇬🇧',sub:'Big Ben Clock Tower · Victorian Mansions · Thames Embankment',
+  sky:0x94a3b8,ground:0x166534,water:true,carColor:0xdc2626,
+  props:[
+   {n:'Kensington Palace Gardens Mansion',rate:'₹90,000/sq.ft',price:130,rent:48,x:-18,z:-16,w:9,h:16,d:9,c:0xf8d7da},
+   {n:'Mayfair Ultra Luxury Townhouse',rate:'₹85,000/sq.ft',price:120,rent:44,x:18,z:-16,w:8,h:18,d:8,c:0xfff3cd},
+   {n:'Canary Wharf Glass High-Rise Suite',rate:'₹62,000/sq.ft',price:80,rent:28,x:-20,z:18,w:8,h:44,d:8,c:0xcff4fc},
+   {n:'Thames View Westminster Penthouse',rate:'₹78,000/sq.ft',price:105,rent:38,x:20,z:18,w:8,h:28,d:8,c:0xd1e7dd}
+  ]
+ }
+};
+
+let reRen=null,reScene=null,reCam=null,reAnimId=null,reCurCity='mumbai',reSelProp=null;
+let reCars=[],rePropMeshes=[],rePlacards=[];
+let rePropsOwned={};try{rePropsOwned=JSON.parse(localStorage.getItem('snk_re_props')||'{}')}catch(e){}
+
+function isPropOwned(cityKey,pName){
+ return !!(rePropsOwned[cityKey]&&rePropsOwned[cityKey].includes(pName));
+}
+
+function initRealEstateScene(){
+ if(reRen)return;
+ const c=$('rec');
+ reRen=new T.WebGLRenderer({canvas:c,antialias:true});
+ reRen.setPixelRatio(Math.min(devicePixelRatio,2));
+ reRen.shadowMap.enabled=true;
+ reScene=new T.Scene();
+ reCam=new T.PerspectiveCamera(45,1,1,500);
+ reCam.position.set(0,35,55);
+ reCam.lookAt(0,6,0);
+}
+
+function resizeRE(){
+ if(!reRen)return;
+ const c=$('rec');
+ reRen.setSize(c.clientWidth,c.clientHeight,false);
+ reCam.aspect=c.clientWidth/c.clientHeight;
+ reCam.updateProjectionMatrix();
+}
+window.addEventListener('resize',resizeRE);
+
+function loadCityRealEstate(cityKey){
+ initRealEstateScene();
+ reCurCity=cityKey;
+ const cd=RE_CITIES[cityKey]||RE_CITIES.mumbai;
+ $('reFlag').textContent=cd.flag;
+ $('reTitle').textContent=cd.name.toUpperCase()+' · 3D REAL ESTATE';
+ $('reSub').textContent=cd.sub;
+ reScene.clear();reCars=[];rePropMeshes=[];rePlacards=[];
+ reScene.background=new T.Color(cd.sky);
+ reScene.fog=new T.Fog(cd.sky,70,220);
+ const hemi=new T.HemisphereLight(0xffffff,cd.ground,0.9);
+ const dir=new T.DirectionalLight(0xfffae0,0.9);
+ dir.position.set(40,80,30);
+ reScene.add(hemi,dir);
+ // Ground plane
+ const gnd=new T.Mesh(new T.PlaneGeometry(300,300),new T.MeshLambertMaterial({color:cd.ground}));
+ gnd.rotation.x=-Math.PI/2;reScene.add(gnd);
+ // Water body if any
+ if(cd.water){
+  const wtr=new T.Mesh(new T.PlaneGeometry(300,80),new T.MeshLambertMaterial({color:0x0284c7}));
+  wtr.rotation.x=-Math.PI/2;wtr.position.set(0,0.1,-65);reScene.add(wtr);
+ }
+ // Road Grid
+ const rMat=new T.MeshLambertMaterial({color:0x1e293b});
+ [-15,0,15].forEach(x=>{
+  const rx=new T.Mesh(new T.PlaneGeometry(6,160),rMat);
+  rx.rotation.x=-Math.PI/2;rx.position.set(x,0.03,0);reScene.add(rx);
+ });
+ [-15,0,15].forEach(z=>{
+  const rz=new T.Mesh(new T.PlaneGeometry(160,6),rMat);
+  rz.rotation.x=-Math.PI/2;rz.position.set(0,0.035,z);reScene.add(rz);
+ });
+ // Properties / Buildings
+ cd.props.forEach((p,i)=>{
+  const owned=isPropOwned(cityKey,p.n);
+  const bMat=new T.MeshLambertMaterial({color:p.c});
+  const m=new T.Mesh(new T.BoxGeometry(p.w,p.h,p.d),bMat);
+  m.position.set(p.x,p.h/2,p.z);
+  m.userData.prop=p;
+  reScene.add(m);rePropMeshes.push(m);
+  // Windows grid
+  for(let wy=4;wy<p.h-3;wy+=4){
+   for(let wx=-p.w/2+1.5;wx<p.w/2;wx+=3){
+    const win=new T.Mesh(new T.PlaneGeometry(1.6,2),new T.MeshBasicMaterial({color:owned?0xffd700:0x93c5fd}));
+    win.position.set(p.x+wx,wy,p.z+p.d/2+0.05);reScene.add(win);
+   }
+  }
+  // 3D Floating Placard
+  const txt=owned?'👑 MALKIYAT: @'+(meNm||'Aap')+' [OWNED]':'🏠 '+p.n+' · 🪙'+p.price;
+  const spr=lab(txt,owned?'Daily Rental Income: 🪙'+p.rent+'/day':'Rate: '+p.rate+' · Buy: 🪙'+p.price);
+  spr.scale.set(11,4,1);
+  spr.position.set(p.x,p.h+4,p.z);
+  reScene.add(spr);rePlacards.push(spr);
+ });
+ // Decorative Skyscrapers around
+ for(let k=0;k<16;k++){
+  const bx=-45+(k%4)*30+(k%2?4:-4),bz=-45+Math.floor(k/4)*30;
+  if(Math.hypot(bx,bz)<16)continue;
+  const bh=18+Math.random()*35;
+  const dec=new T.Mesh(new T.BoxGeometry(8,bh,8),new T.MeshLambertMaterial({color:[0x94a3b8,0x64748b,0xcfd8dc,0xb0bec5][k%4]}));
+  dec.position.set(bx,bh/2,bz);reScene.add(dec);
+ }
+ // Landmark tower (e.g. Burj / Eiffel / Big Ben silhouette in center background)
+ if(cityKey==='dubai'){
+  const burj=new T.Mesh(new T.ConeGeometry(5,85,6),new T.MeshLambertMaterial({color:0xffd700}));
+  burj.position.set(0,42.5,-35);reScene.add(burj);
+ }else if(cityKey==='paris'){
+  const eif=new T.Mesh(new T.ConeGeometry(7,50,4),new T.MeshLambertMaterial({color:0xd97706}));
+  eif.position.set(0,25,-35);reScene.add(eif);
+ }else if(cityKey==='london'){
+  const bb=new T.Mesh(new T.BoxGeometry(6,55,6),new T.MeshLambertMaterial({color:0xb45309}));
+  bb.position.set(0,27.5,-35);reScene.add(bb);
+ }
+ // Traffic Cars
+ for(let i=0;i<6;i++){
+  const cg=new T.Group();
+  bx(cg,2,0.8,4,L(cd.carColor||0xf1c40f),0,0.6,0);
+  bx(cg,1.7,0.7,2.2,gl,0,1.3,-0.2,0);
+  cg.position.set(i%2===0?0:15,0,-40+i*22);
+  reScene.add(cg);
+  reCars.push({g:cg,v:6+i*2,axis:i%2===0?'z':'x'});
+ }
+ // Select first property
+ selectRealEstateProp(cd.props[0]);
+ updateCityBarUI();
+}
+
+function selectRealEstateProp(p){
+ reSelProp=p;
+ const owned=isPropOwned(reCurCity,p.n);
+ $('rePropName').textContent=(owned?'👑 [Aapka Owned] ':'🏠 ')+p.n;
+ $('rePropRate').textContent='Rate: '+p.rate+' · Keemat: 🪙'+p.price+' Coins · Daily Rental: 🪙'+p.rent+'/day';
+ $('reBuyBtn').textContent=owned?'✅ Owned (Malkiyat)':'🏠 Kharido (🪙'+p.price+')';
+ $('reBuyBtn').style.background=owned?'#238636':'linear-gradient(45deg,#f39c12,#e67e22)';
+}
+
+function updateCityBarUI(){
+ const bar=$('reCityBar');bar.textContent='';
+ Object.keys(RE_CITIES).forEach(ck=>{
+  const b=document.createElement('button');
+  const d=RE_CITIES[ck];
+  b.textContent=d.flag+' '+ck.toUpperCase();
+  b.style.cssText='flex:none;white-space:nowrap;padding:6px 12px;font-size:12px;font-weight:700;border-radius:8px;border:1px solid '+(ck===reCurCity?'#ffd700':'#30363d')+';background:'+(ck===reCurCity?'#238636':'#161b22')+';color:#fff';
+  b.onclick=()=>loadCityRealEstate(ck);
+  bar.appendChild(b);
+ });
+}
+
+function reLoop(t){
+ if($('reModal').style.display==='flex'&&reRen){
+  reCars.forEach(c=>{
+   c.g.position.z+=c.v*0.025;
+   if(c.g.position.z>50)c.g.position.z=-50;
+  });
+  rePlacards.forEach((p,i)=>p.position.y+=Math.sin(t*0.003+i)*0.005);
+  reRen.render(reScene,reCam);
+  reAnimId=requestAnimationFrame(reLoop);
+ }
+}
+
+function openCityRealEstate(cityKey='mumbai'){
+ $('reModal').style.display='flex';
+ loadCityRealEstate(cityKey);
+ resizeRE();
+ cancelAnimationFrame(reAnimId);
+ reAnimId=requestAnimationFrame(reLoop);
+ snd('fanfare');
+ toast('🏙️ 3D Real Estate City Explorer khul gaya! Zameen/Makan kharidein');
+}
+
+// Raycast selection in Real Estate City
+$('rec').addEventListener('pointerdown',e=>{
+ if(!reRen)return;
+ const r=$('rec').getBoundingClientRect();
+ const rc=new T.Raycaster();
+ rc.setFromCamera(new T.Vector2((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1),reCam);
+ const hits=rc.intersectObjects(rePropMeshes,false);
+ if(hits.length>0&&hits[0].object.userData.prop){
+  selectRealEstateProp(hits[0].object.userData.prop);
+  snd('hit');
+ }
+});
+
+// Property Buy Action
+$('reBuyBtn').onclick=()=>{
+ if(!reSelProp)return;
+ if(isPropOwned(reCurCity,reSelProp.n)){
+  toast('✅ Ye property pehle se aapki malkiyat mein hai!');return;
+ }
+ if(mst.coins<reSelProp.price){
+  toast('⚠️ Coins kam hain! Zaroorat: 🪙'+reSelProp.price+' Coins (Aapke paas: 🪙'+mst.coins+')');
+  snd('hit');return;
+ }
+ mst.coins-=reSelProp.price;sv();
+ if(!rePropsOwned[reCurCity])rePropsOwned[reCurCity]=[];
+ rePropsOwned[reCurCity].push(reSelProp.n);
+ try{localStorage.setItem('snk_re_props',JSON.stringify(rePropsOwned))}catch(e){}
+ snd('fanfare');
+ toast('🎉 Badhai ho! '+reSelProp.n+' aapne kharid liya! 👑');
+ loadCityRealEstate(reCurCity);
+};
+
+// Daily Rent Collection Action
+$('reRentBtn').onclick=()=>{
+ const owned=rePropsOwned[reCurCity]||[];
+ if(!owned.length){
+  toast('⚠️ Is shahar mein abhi aapki koi property nahi hai. Pehle zameen/makan kharidein!');
+  return;
+ }
+ const cd=RE_CITIES[reCurCity];
+ let totalRent=0;
+ cd.props.forEach(p=>{if(owned.includes(p.n))totalRent+=p.rent});
+ mst.coins+=totalRent;sv();snd('coin');
+ toast('💰 +🪙'+totalRent+' Coins Kiraya (Rent) wasool hua!');
+};
+
+// Drive City Car Action
+$('reDriveBtn').onclick=()=>{
+ $('reModal').style.display='none';
+ const cr=allCars[0];
+ if(cr){board(cr);toast('🚗 City Sports Car Active! Sadkon par drive karein!');}
+};
+
+$('reClose').onclick=()=>{
+ cancelAnimationFrame(reAnimId);
+ $('reModal').style.display='none';
+};
+
+// Top nav and World/India map triggers
+$('bRE').onclick=()=>openCityRealEstate('mumbai');
+$('gbCity').onclick=()=>{
+ const cMap={'USA':'newyork','UK':'london','France':'paris','UAE':'dubai','Japan':'tokyo'};
+ const ck=(sel&&sel.pl&&cMap[sel.pl])||'mumbai';
+ $('gl').style.display='none';
+ openCityRealEstate(ck);
+};
+$('ibCity').onclick=()=>{
+ const sMap={'Maharashtra':'mumbai','Delhi':'delhi','Karnataka':'bengaluru','Rajasthan':'jaipur','Goa':'goa'};
+ const ck=(isel&&sMap[indST[isel.i][0]])||'mumbai';
+ $('ia').style.display='none';
+ openCityRealEstate(ck);
+};
+
 // Sumit News (video jaisa parody channel)
 const HL=[['Deewar ke diye mein daala tel','🪔'],['Chai ne sabko jagaya, alarm ko chhutti mili','☕'],['Mithai ki dukaan ke ladoo ne khud ko 5 star diye','🍬'],['Gaay ne traffic ka rule todha, chalan ka intezaar','🐄'],['Pahadi Shuttle ke driver ko khidki seat par neend aayi','🚂'],['Machhli ne pakadne wale ko hi pakad liya','🎣'],['Barish mein chhatri ne chhutti maangi','☔'],['Sarpanch ka vaada: har gali mein wifi, har ghar mein chai','🗳️'],['Cricket ka six seedha pados ki chhat par','🏏'],['Helicopter pilot bola: ghar ka rasta Google ko bhi nahi pata','🚁']];let nwI=0,nwT=null;
 function nnews(){const h=HL[nwI++%HL.length],pool=ih.length?ih.map(x=>x.nm):NAMES;$('nh').textContent=h[0];$('nsc').textContent=h[1];$('nl').textContent='📍 '+indST[Math.random()*36|0][0]+' · @'+pool[Math.random()*pool.length|0]+' ka ghar · Khabri Lal ki report';$('nr').textContent=['🧐','🎙️','😲'][nwI%3]}
