@@ -1,4 +1,7 @@
-<!DOCTYPE html><html lang="hi"><head><meta charset="utf-8"><title>Sumit Ki Nagari</title>
+<!DOCTYPE html><html lang="hi"><head><meta charset="utf-8"><title>Sumit Ki Nagari - Apni Nagari 3D Living City</title>
+<meta name="description" content="Interactive 3D living Indian town simulation where visitors become residents with custom homes, shops, bustling bazaar, auto-rickshaws, and heritage mohallas.">
+<meta property="og:title" content="Sumit Ki Nagari - Apni Nagari 3D Living City">
+<meta property="og:description" content="Interactive 3D living Indian town simulation where visitors become residents with custom homes, shops, bustling bazaar, auto-rickshaws, and heritage mohallas.">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style>
 :root{--bg:rgba(255,250,240,.94);--fg:#2a2118;--ac:#e8892b;--bd:rgba(0,0,0,.14);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -40,7 +43,7 @@ button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
 @keyframes tk{to{transform:translateX(-100%)}}
 </style></head><body>
 <div id="hd" class="fx"><b>Sumit Ki Nagari</b><i>सुमित की नगरी · Apna ghar, apne log</i><small>संस्थापक: सुमित गुप्ता · @sumitg_2429</small></div>
-<div id="tp" class="fx"><button id="bR" class="on">Ghumao</button><button id="bN">Raat</button><button id="bD">Data</button><button id="bT">Ticket</button><button id="bG">Cricket</button><button id="bF">Tyohar</button><button id="bW">🌎 World</button><button id="bI">🇮🇳 India</button><button id="bC">💬 Chat</button><button id="bE">📰 News</button><button id="bQ">🪙 Mission</button><button id="bV">🗳️ Chunav</button><button id="bY">🎮 Khel</button><button id="bM">🌦 Mausam</button><button id="bU">👥 Follow</button><button id="bH">🎣 Machhli</button><button id="bJ">📍 Jao</button></div>
+<div id="tp" class="fx"><button id="bR" class="on">Ghumao</button><button id="bN">Raat</button><button id="bD">Data</button><button id="bCinema" style="background:#e74c3c;color:#fff;font-weight:700">🎬 Cinema</button><button id="bDrone">🛸 Drone</button><button id="bBank">🏦 Bank</button><button id="bSnd">🔊 Sound</button><button id="bT">Ticket</button><button id="bG">Cricket</button><button id="bF">Tyohar</button><button id="bW">🌎 World</button><button id="bI">🇮🇳 India</button><button id="bC">💬 Chat</button><button id="bE">📰 News</button><button id="bQ">🪙 Mission</button><button id="bV">🗳️ Chunav</button><button id="bY">🎮 Khel</button><button id="bM">🌦 Mausam</button><button id="bU">👥 Follow</button><button id="bH">🎣 Machhli</button><button id="bJ">📍 Jao</button></div>
 <div id="bb"></div><div id="ts"></div>
 <div id="pn" class="fx"><div id="ch"></div><div id="rw"><input id="nm" placeholder="Naam / Dukaan / Jagah likho (Enter = Kholo)"><button id="bLoc">📍 Kholo</button><button id="bP">🔓 Open</button></div><small id="st"></small></div>
 <div id="dg"><div><textarea id="ta"></textarea><div style="display:flex;gap:6px;margin-top:8px"><button id="bL">Load</button><button id="bX">Reset</button><button id="bK">Band</button></div></div></div>
@@ -49,7 +52,11 @@ button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
 <div id="cr" class="ov"><div class="bx"><div id="cs"></div><div id="cb"><i id="cm"></i></div><div id="cx"></div><div class="rw2" style="margin-top:8px"><button id="cg">Shot!</button><button id="cc">Band karo</button></div></div></div>
 <div id="fb"></div>
 <div id="ct" class="ov" style="z-index:7"><div class="bx"><div id="cn"></div><div id="cl"></div><div id="cq" class="rw2"></div><button id="cz" style="margin-top:8px">Band karo</button></div></div>
-<div id="dr"><button data-k="l">◀</button><button data-k="r">▶</button><button data-k="up">⬆</button><button data-k="dn">⬇</button><button id="gs">Gas</button><button id="lv">Utro</button></div>
+<div id="dr" style="flex-wrap:wrap;align-items:center;background:rgba(20,24,36,.88);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:8px">
+<div id="spm" style="width:100%;text-align:center;color:#ffd700;font-weight:800;font-size:13px;letter-spacing:1px;margin-bottom:4px">🚗 DRIVE MODE · 0 km/h</div>
+<button data-k="l">◀</button><button data-k="r">▶</button><button data-k="up">⬆</button><button data-k="dn">⬇</button>
+<button id="gs">Gas</button><button id="bNitro">🚀 Nitro</button><button id="bHorn">📯 Horn</button><button id="bHead">💡 Light</button><button id="bRadio">📻 FM</button><button id="lv">Utro</button>
+</div>
 <div id="gl"><canvas id="gc"></canvas><div class="fx" style="top:calc(env(safe-area-inset-top,0px) + 10px);color:#fff;pointer-events:none;text-shadow:0 2px 8px #000"><b style="font-size:22px">🌎 World</b><small style="display:block">Drag to rotate · pinch to zoom · tap anywhere · tap India to enter</small></div><div id="gp" class="fx"><div id="gi">Globe par kahin bhi tap karo</div><input id="gn" placeholder="Apna naam likho"><div class="rw2"><button id="gb1">🏠 Ghar banao</button><button id="gb2">✈️ Yahan jao</button><button id="gx">Nagri wapas</button></div><div id="gm" class="rw2" style="margin-top:6px"></div></div></div>
 <div id="fo" class="ov"><div class="bx"><b>👥 Follow karo, ghar paao</b><div style="font-size:13px;margin:6px 0">1) Pehle follow karo · 2) Apni Instagram ID likho · 3) Ghar apne aap ban jayega</div><a id="fa" href="https://www.instagram.com/sumitg_2429/" target="_blank" rel="noopener">📸 Follow @sumitg_2429</a><input id="fi" placeholder="Aapki Instagram ID"><button id="fk">🏠 Maine follow kiya, ghar do</button><details style="margin-top:8px;font-size:13px"><summary>Owner: followers ki list paste karo</summary><textarea id="fl" placeholder="Ek line mein ek ID"></textarea><button id="fb2">Sabke ghar banao</button></details><small style="display:block;margin-top:6px;opacity:.7">Instagram follow apne aap check nahi hota (iske liye server chahiye); abhi bharose par ya list paste karke ghar bante hain.</small><button id="fz" style="margin-top:8px">Band karo</button></div></div>
 <div id="fs" class="ov"><div class="bx"><canvas id="fc" width="520" height="260" style="width:100%;height:auto;border-radius:12px"></canvas><div id="ft" style="margin:8px 0;font-size:14px"></div><div class="rw2"><button id="fg">🎣 Dor daalo</button><button id="fq">Band karo</button></div></div></div>
@@ -62,6 +69,61 @@ button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
 <div id="mi" class="ov"><div class="bx"><b id="mih"></b><div id="mil"></div><b style="display:block;margin-top:8px">🏆 Leaderboard</b><div id="mib" style="font-size:13px;white-space:pre-line"></div><button id="miz" style="margin-top:8px">Band karo</button></div></div>
 <div id="el" class="ov"><div class="bx"><b>🗳️ Sarpanch Chunav (aaj)</b><div id="ell"></div><div id="elw" style="margin-top:6px;font-weight:700"></div><button id="elz" style="margin-top:8px">Band karo</button></div></div>
 <div id="kh" class="ov"><div class="bx"><b>🎮 Khel</b><div id="khk" class="rw2" style="margin:8px 0"></div><div id="khb" style="font-family:monospace;min-height:20px"></div><div id="kha" style="margin:6px 0;font-size:14px"></div><div id="khc" class="rw2"></div><button id="khz" style="margin-top:8px">Band karo</button></div></div>
+<div id="tht" class="ov" style="z-index:9;background:#0d0f18;padding:0;flex-direction:column;align-items:stretch">
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:calc(env(safe-area-inset-top,0px) + 8px) 14px 8px;background:#161928;border-bottom:1px solid #2a2e45">
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="font-size:24px">🎬</span>
+      <div>
+        <b style="color:#ffd700;font-size:16px;display:block">SUMIT TALKIES · 4K DOLBY MULTIPLEX</b>
+        <small style="color:#a0aec0;font-size:11px">Audi 1 · Laser Ultra HD Projector · Dolby Atmos 7.1</small>
+      </div>
+    </div>
+    <div style="display:flex;gap:6px">
+      <button id="thMode" style="background:#e74c3c;color:#fff;border:none;padding:6px 12px;font-weight:700">🎞️ Screen View</button>
+      <button id="thClose" style="background:#2a2e45;color:#fff;border:none;padding:6px 10px">✕</button>
+    </div>
+  </div>
+  <div id="thBook" style="padding:14px;overflow-y:auto;flex:1">
+    <div style="font-size:13px;color:#cbd5e0;margin-bottom:6px">1) 📽️ Now Showing Movies (Ticket chuno):</div>
+    <div id="thMovies" class="rw2" style="margin-bottom:12px"></div>
+    <div style="font-size:13px;color:#cbd5e0;margin-bottom:6px">2) 🪑 Seat Category:</div>
+    <div id="thSeats" class="rw2" style="margin-bottom:12px"></div>
+    <div style="background:#161928;border:1px solid #2a2e45;border-radius:14px;padding:12px;margin-bottom:12px">
+      <div style="display:flex;justify-content:space-between;font-weight:700;font-size:15px;color:#ffd700" id="thSumm">Ticket: ₹250 · KGF 3 (Gold Balcony)</div>
+      <label style="display:flex;align-items:center;gap:8px;font-size:13px;color:#fff;margin-top:8px;cursor:pointer">
+        <input type="checkbox" id="thPop" checked style="width:auto;margin:0"> 🍿 Jumbo Caramel Popcorn + 🥤 Chilled Cold Drink (Combo ₹99)
+      </label>
+    </div>
+    <div class="rw2">
+      <button id="thPay" style="flex:1;background:linear-gradient(45deg,#e74c3c,#c0392b);color:#fff;font-weight:800;padding:12px;font-size:15px;border:none;border-radius:12px;cursor:pointer">🎟️ Book Ticket & Hall Mein Jao</button>
+    </div>
+    <div id="thPass" style="display:none;margin-top:14px;border:2px dashed #ffd700;border-radius:14px;padding:12px;background:#1b1d2e"></div>
+  </div>
+  <div id="thHall" style="display:none;flex-direction:column;align-items:center;justify-content:center;flex:1;position:relative;background:#050508;overflow:hidden">
+    <div style="position:relative;width:min(96vw,840px);aspect-ratio:16/9;background:#000;border:3px solid #222;border-radius:8px;box-shadow:0 0 35px rgba(231,76,60,.4);overflow:hidden">
+      <canvas id="thc" width="840" height="472" style="width:100%;height:100%;display:block"></canvas>
+      <div id="thSub" style="position:absolute;bottom:14px;left:0;right:0;text-align:center;color:#fff;font-size:15px;font-weight:700;text-shadow:0 2px 8px #000;padding:0 20px"></div>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;padding:10px 12px;width:100%">
+      <button id="thClap">👏 Taali & Seeti</button>
+      <button id="thEat">🍿 Popcorn Khao</button>
+      <button id="thNext">🎞️ Agli Movie</button>
+      <button id="thView">🪑 Seat View</button>
+      <button id="thVol">🔊 Dolby Sound</button>
+    </div>
+  </div>
+</div>
+<div id="bkModal" class="ov"><div class="bx">
+  <b style="font-size:18px">🏦 Nagari Central Bank & ATM</b>
+  <div style="font-size:13px;margin:6px 0;color:var(--fg)">Khata: @<span id="bkUser">Aap</span> · Balance: 🪙 <span id="bkBal">0</span> coins</div>
+  <div class="rw2" style="margin:10px 0">
+    <button id="bkDep">📥 Jama Karo (Deposit 🪙10)</button>
+    <button id="bkWdl">📤 Nikalo (Withdraw 🪙10)</button>
+    <button id="bkSpin">🎰 Daily Lucky Spin (Free Coins)</button>
+  </div>
+  <div id="bkMsg" style="font-size:13px;color:#e8892b;margin:6px 0"></div>
+  <button id="bkClose" style="margin-top:8px">Band karo</button>
+</div></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 const T=THREE,S=5,PI=Math.PI,$=id=>document.getElementById(id);
@@ -163,8 +225,25 @@ function save(){try{localStorage.setItem('snk3',JSON.stringify(user.map(({k,x,z,
 function stat(){const c=k=>user.filter(o=>o.k===k).length;$('st').textContent='Aapne joda: '+user.length+' (Nagrik/Ghar '+c('ghar')+', Dukaan '+c('dukaan')+', Ped '+c('ped')+') · Khali zameen par tap karo'}
 // ---------- world ----------
 const gnd=new T.Mesh(new T.PlaneGeometry(700,700),L(0x8fbf5a));gnd.rotation.x=-PI/2;gnd.receiveShadow=true;scene.add(gnd);
-for(let k=-9;k<=9;k+=3){const a=new T.Mesh(new T.PlaneGeometry(S*19,S*.9),L(0xc9a46a)),b=new T.Mesh(new T.PlaneGeometry(S*.9,S*19),L(0xc9a46a));
- a.rotation.x=b.rotation.x=-PI/2;a.position.set(0,.03,k*S);b.position.set(k*S,.04,0);a.receiveShadow=b.receiveShadow=true;scene.add(a,b)}
+const roadTexH=cv(512,128,(g,w,h)=>{
+ g.fillStyle='#22252a';g.fillRect(0,0,w,h);
+ g.fillStyle='#1c1e22';for(let i=0;i<500;i++)g.fillRect(Math.random()*w,Math.random()*h,2,2);
+ g.fillStyle='#f1c40f';g.fillRect(0,4,w,3);g.fillRect(0,h-7,w,3);
+ g.fillStyle='#ffffff';
+ for(let x=0;x<w;x+=48)g.fillRect(x+8,h/2-2,28,4);
+});
+roadTexH.wrapS=T.RepeatWrapping;roadTexH.repeat.set(12,1);
+const roadTexV=cv(128,512,(g,w,h)=>{
+ g.fillStyle='#22252a';g.fillRect(0,0,w,h);
+ g.fillStyle='#1c1e22';for(let i=0;i<500;i++)g.fillRect(Math.random()*w,Math.random()*h,2,2);
+ g.fillStyle='#f1c40f';g.fillRect(4,0,3,h);g.fillRect(w-7,0,3,h);
+ g.fillStyle='#ffffff';
+ for(let y=0;y<h;y+=48)g.fillRect(w/2-2,y+8,4,28);
+});
+roadTexV.wrapT=T.RepeatWrapping;roadTexV.repeat.set(1,12);
+const rMatH=new T.MeshLambertMaterial({map:roadTexH}),rMatV=new T.MeshLambertMaterial({map:roadTexV});
+for(let k=-9;k<=9;k+=3){const a=new T.Mesh(new T.PlaneGeometry(S*19,S*.95),rMatH),b=new T.Mesh(new T.PlaneGeometry(S*.95,S*19),rMatV);
+ a.rotation.x=b.rotation.x=-PI/2;a.position.set(0,.035,k*S);b.position.set(k*S,.04,0);a.receiveShadow=b.receiveShadow=true;scene.add(a,b)}
 const lake=new T.Mesh(new T.CylinderGeometry(11,11.6,.3,40),new T.MeshLambertMaterial({color:0x45a6d6}));lake.position.set(30,.1,-30);scene.add(lake);
 for(let i=0;i<14;i++){const a=i/14*PI*2,h=new T.Mesh(new T.SphereGeometry(10+B()*14,12,8),new T.MeshLambertMaterial({color:0x78ae55,flatShading:true}));h.scale.y=.4;h.position.set(Math.cos(a)*(115+B()*20),0,Math.sin(a)*(115+B()*20));scene.add(h)}
 // chowk fountain + tiranga
@@ -314,11 +393,67 @@ for(let i=0;i<5;i++)trav([-77,0,-14-i*1.5],[-85.5,0,-34-i*.8],c6[i]);for(let i=0
 {const g=new T.Group(),b=new T.Mesh(new T.CylinderGeometry(3.2,3.4,.5,12),L(0xe6dcc6));b.position.y=.25;g.add(b);for(let i=0;i<6;i++){const a=i/6*PI*2;bx(g,.25,3.2,.25,L(0xffffff),Math.cos(a)*2.6,2,Math.sin(a)*2.6)}const c=new T.Mesh(new T.ConeGeometry(3.6,2,12),L(0xc0392b));c.position.y=4.6;c.castShadow=true;g.add(c);g.position.set(58,0,-12);scene.add(g)}
 [['LIBRARY',-26],['LABS',0],['HOSTEL',26]].forEach(([t,x])=>{const g=new T.Group();bx(g,20,5,6,W(0xe9e2d2),0,2.5,0);bx(g,20.4,.4,6.4,L(0xb5483a),0,5.2,0);sg(t,8,1,'#2c5a9e','#fff',34,0,4,3.1,0,g);g.position.set(x,0,-84);scene.add(g)});
 {const g=new T.Group();bx(g,8,3.4,5,W(0xf2d16b),0,1.7,0);sg('CANTEEN',5,.8,'#8e2c1c','#fff',30,0,3.9,2.55,0,g);g.position.set(0,0,-70);scene.add(g)}
-// vehicles
+// sound engine & vehicle controls
+let actx=null,sndOn=true;
+function getAC(){if(!actx)actx=new (window.AudioContext||window.webkitAudioContext)();if(actx.state==='suspended')actx.resume();return actx}
+function snd(type){
+ if(!sndOn)return;
+ try{
+  const ctx=getAC(),t=ctx.currentTime;
+  if(type==='horn'){
+   [370,466].forEach(f=>{
+    const o=ctx.createOscillator(),g=ctx.createGain();o.type='sawtooth';o.frequency.setValueAtTime(f,t);
+    g.gain.setValueAtTime(.16,t);g.gain.exponentialRampToValueAtTime(.001,t+.35);
+    o.connect(g);g.connect(ctx.destination);o.start(t);o.stop(t+.36);
+   });
+  }else if(type==='engine'){
+   const o=ctx.createOscillator(),g=ctx.createGain();o.type='triangle';o.frequency.setValueAtTime(80,t);
+   o.frequency.exponentialRampToValueAtTime(140,t+.2);g.gain.setValueAtTime(.09,t);
+   g.gain.linearRampToValueAtTime(.001,t+.2);o.connect(g);g.connect(ctx.destination);o.start(t);o.stop(t+.2);
+  }else if(type==='nitro'){
+   const buf=ctx.createBuffer(1,ctx.sampleRate*.4,ctx.sampleRate),d=buf.getChannelData(0);
+   for(let i=0;i<d.length;i++)d[i]=(Math.random()*2-1)*Math.exp(-i/(ctx.sampleRate*.15));
+   const s=ctx.createBufferSource(),g=ctx.createGain();s.buffer=buf;g.gain.setValueAtTime(.25,t);
+   g.connect(ctx.destination);s.connect(g);s.start(t);
+  }else if(type==='coin'){
+   const o=ctx.createOscillator(),g=ctx.createGain();o.type='sine';o.frequency.setValueAtTime(987,t);
+   o.frequency.setValueAtTime(1318,t+.08);g.gain.setValueAtTime(.16,t);g.gain.exponentialRampToValueAtTime(.001,t+.3);
+   o.connect(g);g.connect(ctx.destination);o.start(t);o.stop(t+.32);
+  }else if(type==='fanfare'){
+   [523,659,784,1046].forEach((f,i)=>{
+    const o=ctx.createOscillator(),g=ctx.createGain();o.type='triangle';o.frequency.setValueAtTime(f,t+i*.12);
+    g.gain.setValueAtTime(0,t);g.gain.setValueAtTime(.18,t+i*.12);g.gain.exponentialRampToValueAtTime(.001,t+i*.12+.3);
+    o.connect(g);g.connect(ctx.destination);o.start(t+i*.12);o.stop(t+i*.12+.35);
+   });
+  }else if(type==='clap'){
+   for(let i=0;i<4;i++){setTimeout(()=>{if(!sndOn)return;const buf=ctx.createBuffer(1,ctx.sampleRate*.06,ctx.sampleRate),d=buf.getChannelData(0);for(let j=0;j<d.length;j++)d[j]=(Math.random()*2-1);const s=ctx.createBufferSource(),g=ctx.createGain();s.buffer=buf;g.gain.setValueAtTime(.2,ctx.currentTime);g.connect(ctx.destination);s.connect(g);s.start()},i*70)}
+  }
+ }catch(e){}
+}
+if($('bSnd'))$('bSnd').onclick=()=>{sndOn=!sndOn;$('bSnd').textContent=sndOn?'🔊 Sound':'🔈 Mute';toast(sndOn?'Sound shuru':'Sound band');if(sndOn)snd('coin')};
 const V={heli:{g:he,k:'heli',home:[82,.1,-8],hy:PI},plane:{g:pl,k:'plane',home:[-88,1.1,-38],hy:0},train:{g:train,k:'train'}};let drv=null,gas=false;const ky={};
-function board(v){drv=v;v.sp=v.k==='train'?8:0;v.hd=v.g.rotation.y;auto=false;gas=false;$('gs').classList.remove('on');$('dr').style.display='flex';$('pn').style.display='none';toast(v.k==='heli'?'🚁 Pilot andar baitha hai · Gas dabao, ⬆ se udao':v.k==='plane'?'✈️ Pilot andar hai · Gas dabao, speed aane par ⬆':'🚆 Driver andar hai · Gas dabao, ⬆⬇ speed')}
-function leave(){const v=drv;if(!v)return;drv=null;$('dr').style.display='none';$('pn').style.display='';if(v.k==='train')v.g.position.x=-60;else{v.g.position.set(...v.home);v.g.rotation.set(0,v.hy,0)}tg.set(0,0,0);dist=95;toast('Utar gaye')}
+function board(v){
+ if(drv)leave();
+ drv=v;v.sp=v.k==='train'?8:0;v.hd=v.g.rotation.y;v.nitro=0;v.lights=false;auto=false;gas=false;
+ $('gs').classList.remove('on');$('dr').style.display='flex';$('pn').style.display='none';
+ snd(v.k==='car'?'engine':'fanfare');
+ toast(v.k==='heli'?'🚁 Pilot andar baitha hai · Gas dabao, ⬆ se udao':v.k==='plane'?'✈️ Pilot andar hai · Gas dabao, speed aane par ⬆':v.k==='car'?'🚗 Car chalu hai · Gas dabao, Steer karo, 🚀 Nitro, 📯 Horn, 💡 Light!':'🚆 Driver andar hai · Gas dabao, ⬆⬇ speed');
+}
+function leave(){
+ const v=drv;if(!v)return;
+ if(v.tc)v.tc.userDriving=false;
+ if(v.g.userData&&v.g.userData.spotlights)v.g.userData.spotlights.forEach(sl=>sl.intensity=0);
+ drv=null;$('dr').style.display='none';$('pn').style.display='';
+ if(v.k==='train')v.g.position.x=-60;
+ else if(v.home){v.g.position.set(...v.home);v.g.rotation.set(0,v.hy,0)}
+ tg.set(0,0,0);dist=95;toast('Utar gaye');
+}
 $('gs').onclick=e=>{gas=!gas;e.target.classList.toggle('on',gas)};$('lv').onclick=leave;
+$('bNitro').onclick=()=>{if(!drv)return;drv.sp=Math.min(65,(drv.sp>0?drv.sp:15)+25);drv.nitro=3.5;snd('nitro');toast('🚀 NITRO BOOST 65 km/h!! 🔥🔥')};
+$('bHorn').onclick=()=>{snd('horn');toast('📯 PEEP PEEP!! Rasta chhodo!')};
+$('bHead').onclick=()=>{if(!drv)return;drv.lights=!drv.lights;$('bHead').classList.toggle('on',drv.lights);if(drv.g&&drv.g.userData&&drv.g.userData.spotlights)drv.g.userData.spotlights.forEach(sl=>sl.intensity=drv.lights?2:0);toast(drv.lights?'💡 High-beam Headlights ON':'Headlights OFF')};
+const FM_STATIONS=['📻 93.5 Red FM · Bollywood Hits','📻 98.3 Radio Mirchi · Romantic Nagari Melodies','📻 104 Fever FM · Non-Stop Party Beats','📻 91.1 Radio City · Retro Classics'];let fmIdx=0;
+$('bRadio').onclick=()=>{fmIdx=(fmIdx+1)%FM_STATIONS.length;snd('fanfare');toast(FM_STATIONS[fmIdx])};
 document.querySelectorAll('#dr [data-k]').forEach(b=>{const k=b.dataset.k;b.addEventListener('pointerdown',e=>{e.preventDefault();ky[k]=1});['pointerup','pointerleave','pointercancel'].forEach(n=>b.addEventListener(n,()=>ky[k]=0))});
 const KM={ArrowUp:'up',w:'up',ArrowDown:'dn',s:'dn',ArrowLeft:'l',a:'l',ArrowRight:'r',d:'r'};
 addEventListener('keydown',e=>{if(KM[e.key])ky[KM[e.key]]=1;if(e.key===' '&&drv){gas=!gas;$('gs').classList.toggle('on',gas)}});addEventListener('keyup',e=>{if(KM[e.key])ky[KM[e.key]]=0});
@@ -378,12 +513,43 @@ const sh=new T.Group();sh.rotation.order='YXZ';bx(sh,12,4,40,L(0x1d2b4f),0,1.6,0
  for(let i=0;i<8;i++){const t=new T.Group();R=mk(i+1);KINDS.ped.make(t,{});t.position.set(Math.cos(i*.8)*11,0,Math.sin(i*.8)*11);g.add(t)}g.position.set(68,0,-48);scene.add(g)}
 function bld(t,x,w,h,c,k,tt){const g=new T.Group();bx(g,w,h,9,W(c),0,h/2,0);bx(g,w+.4,.4,9.4,L(0x222222),0,h+.2,0);bx(g,w-3,h-2.4,.2,gl,0,h/2-.4,4.6,0);sg(t,Math.min(w*.8,16),1.4,'#111','#ffd58a',36,0,h-.6,4.65,0,g);g.position.set(x,0,-58);scene.add(g);hit(x,h/2,-58,w,h,9,k,tt)}
 bld('SUMIT MALL',-34,22,9,0xe8dcc8,'shop','🛍️ Shopping Mall · log shopping kar rahe hain');bld('LUXURY SHOWROOM',-8,14,6,0x2b2f3a,'shop','💎 Luxury Showroom · shopping');bld('CAR SHOWROOM',14,16,6,0xdfe6ee,'shop','🚗 Car Showroom · log gaadi dekh rahe hain');bld('HELICOPTER SHOWROOM',38,16,6,0xe9d9c0,'shop','🚁 Helicopter Showroom · log dekh rahe hain');
-function car(c){const g=new T.Group();g.rotation.order='YXZ';bx(g,2,.7,4.2,L(c),0,.7,0);bx(g,1.7,.7,2.2,gl,0,1.4,-.2,0);[[-1,1.4],[1,1.4],[-1,-1.4],[1,-1.4]].forEach(([x,z])=>{const w=new T.Mesh(new T.CylinderGeometry(.4,.4,.3,10),L(0x111111));w.rotation.z=PI/2;w.position.set(x,.4,z);g.add(w)});const dv=human(0x333333,.45);dv.g.position.set(.4,.45,.2);g.add(dv.g);return g}
-const cr0=car(0xd7263d);cr0.position.set(14,0,-50);scene.add(cr0);[0x1d4f91,0xf2a900].forEach((c,i)=>{const g=car(c);g.position.set(9+i*10,0,-50);g.rotation.y=.3;scene.add(g)});
+const allCars=[];
+function car(c,nm){
+ const g=new T.Group();g.rotation.order='YXZ';
+ bx(g,2,.7,4.2,L(c),0,.7,0);
+ bx(g,1.7,.7,2.2,gl,0,1.4,-.2,0);
+ [[-1,1.4],[1,1.4],[-1,-1.4],[1,-1.4]].forEach(([x,z])=>{
+  const w=new T.Mesh(new T.CylinderGeometry(.4,.4,.3,10),L(0x111111));
+  w.rotation.z=PI/2;w.position.set(x,.4,z);g.add(w);
+ });
+ const hL1=new T.Mesh(new T.SphereGeometry(.14,8,6),new T.MeshBasicMaterial({color:0xfffae0}));hL1.position.set(-.7,.65,2.12);g.add(hL1);
+ const hL2=new T.Mesh(new T.SphereGeometry(.14,8,6),new T.MeshBasicMaterial({color:0xfffae0}));hL2.position.set(.7,.65,2.12);g.add(hL2);
+ const sl1=new T.SpotLight(0xfffae0,0,25,PI/5,.3);sl1.position.set(-.7,.65,2.15);sl1.target.position.set(-.7,.2,15);g.add(sl1,sl1.target);
+ const sl2=new T.SpotLight(0xfffae0,0,25,PI/5,.3);sl2.position.set(.7,.65,2.15);sl2.target.position.set(.7,.2,15);g.add(sl2,sl2.target);
+ g.userData.spotlights=[sl1,sl2];
+ const dv=human(0x333333,.45);dv.g.position.set(.4,.45,.2);g.add(dv.g);
+ const cd={g,k:'car',nm:nm||'Nagari Car',home:[0,0,0],hy:0};
+ g.userData.carData=cd;
+ allCars.push(cd);
+ return g;
+}
+const cr0=car(0xd7263d,'Red Sportscar');cr0.position.set(14,0,-50);scene.add(cr0);
+allCars[0].home=[14,0,-50];
+[0x1d4f91,0xf2a900].forEach((c,i)=>{const g=car(c,i?'Yellow Sedan':'Blue Cruiser');g.position.set(9+i*10,0,-50);g.rotation.y=.3;scene.add(g);g.userData.carData.home=[9+i*10,0,-50];g.userData.carData.hy=.3});
 {const g=he.clone(true);g.scale.setScalar(.6);g.position.set(38,.1,-51);scene.add(g)}
-V.ship={g:sh,k:'ship',home:[70,.3,125],hy:0};V.car={g:cr0,k:'car',home:[14,0,-50],hy:0};
-const tcs=[];for(let i=0;i<6;i++){const g=car(c6[i]);scene.add(g);tcs.push({g,ax:i%2,l:((i*2%7)-3)*15+(i%3?2:-2),p:(i*17%90)-45,v:(i%3?8:-8)})}
-fx.push(dt=>tcs.forEach(c=>{c.p+=c.v*dt;if(Math.abs(c.p)>47)c.p=-Math.sign(c.v)*47;c.g.position.set(c.ax?c.l:c.p,0,c.ax?c.p:c.l);c.g.rotation.y=c.ax?(c.v>0?0:PI):(c.v>0?PI/2:-PI/2)}));
+V.ship={g:sh,k:'ship',home:[70,.3,125],hy:0};V.car=allCars[0];
+const tcs=[];for(let i=0;i<6;i++){
+ const g=car(c6[i],'Traffic Car '+(i+1));scene.add(g);
+ const tcObj={g,ax:i%2,l:((i*2%7)-3)*15+(i%3?2:-2),p:(i*17%90)-45,v:(i%3?8:-8),traffic:true,userDriving:false};
+ g.userData.carData.tc=tcObj;
+ tcs.push(tcObj);
+}
+fx.push(dt=>tcs.forEach(c=>{
+ if(c.userDriving)return;
+ c.p+=c.v*dt;if(Math.abs(c.p)>47)c.p=-Math.sign(c.v)*47;
+ c.g.position.set(c.ax?c.l:c.p,0,c.ax?c.p:c.l);
+ c.g.rotation.y=c.ax?(c.v>0?0:PI):(c.v>0?PI/2:-PI/2);
+}));
 bx(scene,2.2,.5,86,L(0x777777),65,7,16,0);for(let z=-26;z<=58;z+=12)bx(scene,.8,7,.8,L(0x999999),65,3.5,z);
 {const g=new T.Group();bx(g,7,.4,26,L(0xd9cdb4),0,0,0);bx(g,8,.3,26,L(0x1d4f91),0,4,0,0);[-1,1].forEach(s=>bx(g,.3,4,.3,L(0xeeeeee),s*3.4,2,10));sg('METRO · CAMPUS LINE',10,1,'#1d4f91','#fff',32,-3.6,3,0,-PI/2,g);g.position.set(70,7.2,16);scene.add(g);hit(70,9,16,8,5,26,'metro','🚇 Metro · students padhai ke liye safar kar rahe hain')}
 const mt=new T.Group();[0,1,2].forEach(i=>{bx(mt,2.4,2.4,6.6,L(i?0x2b6cb0:0xd7263d),0,1.4,-i*7);bx(mt,2.45,.8,6.4,L(0x1b2433),0,1.8,-i*7,0)});mt.position.set(65,7.5,-26);scene.add(mt);let mw=0,ms=0;
@@ -452,7 +618,7 @@ function openItemDetail(o,g){
  else if(o.k==='mandir')desc='🛕 '+(o.n||'Prachin Mandir')+' · '+loc+'\n🙏 महाआरती, घंटी, धूप-दीप और पावन प्रसाद';
  else if(o.k==='school')desc='🏫 '+(o.n||'Nagari Shiksha Niketan')+' · '+loc+'\n📚 क्लासरूम, शिक्षक और अनुशासित विद्यार्थी';
  else if(o.k==='hospital')desc='🏥 '+(o.n||'Nagari Arogya Hospital')+' · '+loc+'\n🩺 24x7 इमरजेंसी, अनुभवी डॉक्टर और मरीज वार्ड';
- else if(o.k==='cinema')desc='🎬 '+(o.n||'Sumit Talkies Multiplex')+' · '+loc+'\n🍿 4K डॉल्बी एटमॉस सिल्वर स्क्रीन और ताजा पॉपकॉर्न';
+ if(o.k==='cinema'){openTheater();return}
  else if(o.k==='thana')desc='🚨 '+(o.n||'Nagari Police Thana & Central Jail')+' · '+loc+'\n👮 24x7 गश्त, पुलिस इंस्पेक्टर और सुरक्षित कारागार';
  else if(o.k==='park')desc='🎪 '+(o.n||'Children Park & Lake')+' · '+loc+'\n🎡 झूले, हरा-भरा बगीचा और शीतल फव्वारा';
  else if(o.k==='hotel')desc='🏨 '+(o.n||'Shahi Palace Hotel')+' · '+loc+'\n🍽️ फाइव स्टार डाइनिंग, लजीज खाना और सुइट्स';
@@ -464,6 +630,7 @@ function openItemDetail(o,g){
 }
 function explore2(e){setRay(e);const hv=a=>ray.intersectObjects(a,true)[0];
  let h=hv(walk.map(w=>w.g));if(h){let g=h.object;while(g&&!g.userData.nm)g=g.parent;if(g){tg.set(g.position.x,0,g.position.z);dist=24;ph=.95;auto=false;chat(g.userData.nm,g.userData.job);return}}
+ const cMeshes=allCars.map(c=>c.g);h=drv?null:hv(cMeshes);if(h){let g=h.object;while(g.parent&&!cMeshes.includes(g))g=g.parent;const cd=allCars.find(c=>c.g===g);if(cd){board(cd);return}}
  const vs=Object.values(V).map(v=>v.g);h=drv?null:hv(vs);if(h){let g=h.object;while(g.parent&&!vs.includes(g))g=g.parent;board(Object.values(V).find(v=>v.g===g));return}
  h=hv(items.map(o=>o.g));if(h){let g=h.object;while(g&&!g.userData.o)g=g.parent;if(g){openItemDetail(g.userData.o,g);return}}
  h=hv(hot);if(h){tg.set(h.object.position.x,0,h.object.position.z);dist=35;ph=.95;auto=false;sc2(h.object.userData.hot.k,h.object.userData.hot.t)}}
@@ -474,9 +641,23 @@ function step(dt,t){stepG(dt);stepW(dt,t);stepI(dt,t);
  fx.forEach(f=>f(dt,t));rot.rotation.y+=dt*(drv===V.heli&&(gas||he.position.y>.5)?30:5);
  if(drv){const v=drv,g=v.g,up=ky.up,dn=ky.dn,l=ky.l,r=ky.r;auto=false;
   if(v.k==='train'){if(up)v.sp=Math.min(30,v.sp+8*dt);if(dn)v.sp=Math.max(0,v.sp-12*dt);if(gas)g.position.x+=v.sp*dt;if(g.position.x>130)g.position.x=-60;tg.lerp(g.position,Math.min(1,dt*4));dist=60;ph=.95}
-  else{v.hd+=((l?1:0)-(r?1:0))*1.3*dt;const hel=v.k==='heli',gy=v.home[1];
+  else{v.hd+=((l?1:0)-(r?1:0))*1.4*dt;const hel=v.k==='heli',gy=v.home[1];
    if(hel){v.sp+=((gas?16:0)-v.sp)*Math.min(1,dt*1.5);g.position.y+=((up?1:0)-(dn?1:0))*9*dt}
-   else if(v.k==='ship'||v.k==='car'){const cr2=v.k==='car';v.sp+=((gas?(cr2?22:12):0)-v.sp)*Math.min(1,dt*(cr2?1.5:1));g.position.y=v.home[1]+(cr2?0:Math.sin(t/700)*.15)}
+   else if(v.k==='ship'||v.k==='car'){
+    const cr2=v.k==='car';
+    if(v.nitro>0)v.nitro-=dt;
+    const maxSp=cr2?(v.nitro>0?48:24):12;
+    if(cr2){
+     if(up)v.sp=Math.min(maxSp,v.sp+20*dt);
+     if(dn)v.sp=Math.max(-10,v.sp-22*dt);
+     if(!up&&!dn&&!gas)v.sp*=(1-Math.min(1,dt*2.5));
+     if(gas)v.sp+=((maxSp)-v.sp)*Math.min(1,dt*2);
+    }else{
+     v.sp+=((gas?12:0)-v.sp)*Math.min(1,dt*1);
+    }
+    g.position.y=v.home[1]+(cr2?0:Math.sin(t/700)*.15);
+    if(cr2&&$('spm'))$('spm').textContent=(v.nm||'🚗 CAR')+' · '+Math.round(Math.abs(v.sp)*3.6)+' km/h'+(v.nitro>0?' 🔥 NITRO!':'');
+   }
    else{v.sp+=((gas?45:0)-v.sp)*Math.min(1,dt*.6);if(v.sp>20)g.position.y+=((up?1:0)-(dn?1:0))*10*dt;else g.position.y-=8*dt}
    g.position.y=Math.max(gy,Math.min(60,g.position.y));g.position.x=Math.max(-150,Math.min(150,g.position.x+Math.sin(v.hd)*v.sp*dt));g.position.z=Math.max(v.k==='ship'?95:-150,Math.min(150,g.position.z+Math.cos(v.hd)*v.sp*dt));
    g.rotation.y=v.hd;g.rotation.z=((l?.25:0)-(r?.25:0));tg.lerp(g.position,Math.min(1,dt*4));let d=v.hd+PI-th;d=Math.atan2(Math.sin(d),Math.cos(d));th+=d*Math.min(1,dt*2);ph=.95;dist=hel?30:v.k==='ship'?60:v.k==='car'?26:40}}
@@ -648,6 +829,201 @@ $('bE').onclick=()=>{$('nw').style.display='flex';nnews();$('nt').textContent=HL
 {const g=new T.Group();g.position.set(-62,0,35);scene.add(g);const w=new T.Group();w.position.set(0,7.5,0);g.add(w);w.add(new T.Mesh(new T.TorusGeometry(6.5,.18,6,32),L(0xffd54a)));for(let i=0;i<6;i++)bx(w,13,.1,.1,L(0xffffff),0,0,0,0).rotation.z=i*PI/6;const gon=[];for(let i=0;i<12;i++){const a=i/12*PI*2;gon.push(bx(w,1.2,1,1,L(c6[i%6]),Math.cos(a)*6.5,Math.sin(a)*6.5,0,0))}bx(g,.4,7.5,.4,L(0xcccccc),0,3.75,-.8);bx(g,.4,7.5,.4,L(0xcccccc),0,3.75,.8);fx.push(dt=>{w.rotation.z+=dt*.25;gon.forEach(c=>c.rotation.z=-w.rotation.z)});
  const cr2=new T.Group();cr2.position.set(10,0,0);g.add(cr2);const cb=new T.Mesh(new T.CylinderGeometry(3.4,3.4,.4,16),L(0xe6dcc6));cb.position.y=.2;cr2.add(cb);const rf=new T.Mesh(new T.ConeGeometry(4,2,16),L(0xd7263d));rf.position.y=5;cr2.add(rf);for(let i=0;i<6;i++){const a=i/6*PI*2;bx(cr2,.15,4,.15,L(0xffd54a),Math.cos(a)*2.5,2.2,Math.sin(a)*2.5,0);bx(cr2,.5,.9,1.3,L(c6[i]),Math.cos(a)*2.5,1.4,Math.sin(a)*2.5)}fx.push(dt=>cr2.rotation.y+=dt*.8);
  ['GOLGAPPE','KATHPUTLI','JHULA','CHAI'].forEach((t,i)=>{const s=new T.Group();bx(s,3.2,2.2,2,L(c6[i]),0,1.1,0);bx(s,3.6,.12,1.8,new T.MeshLambertMaterial({map:stripe}),0,2.4,1.5,0).rotation.x=.3;sg(t,3,.6,'#fff7e0','#7a2e0e',26,0,3,1.05,0,s);s.position.set(-8+i*5,0,9);g.add(s)});sg('SUMIT KI NAGARI MELA',10,1,'#d7263d','#fff',34,5,14,0,0,g)}
+// ======== NAYA 8: 4K Movie Theater (Sumit Talkies Multiplex) ========
+const MOVIES=[
+ {id:'kgf3',t:'KGF: Chapter 3',sub:'Rocky Raj Ka Anth Ya Aarambh?',tag:'ACTION · THRILLER · 2h 48m',c:'#f39c12',price:250,
+  quotes:['"Ghayal sher ki saansen uski dahad se zyada khatarnak hoti hain!"','"Toofaan ko aane ki aadat hai, Rocky toofaan ko mod deta hai!"','"Duniya meri mutthi mein nahi, main duniya ki qismat mein hoon!"'],
+  draw(ctx,W,H,t){
+   const gd=ctx.createLinearGradient(0,0,0,H);gd.addColorStop(0,'#1a0f00');gd.addColorStop(.6,'#3d2005');gd.addColorStop(1,'#110901');
+   ctx.fillStyle=gd;ctx.fillRect(0,0,W,H);
+   ctx.fillStyle='rgba(243,156,18,0.25)';for(let i=0;i<40;i++){const x=(Math.sin(t*0.001+i*99)*W+W)%W,y=(Math.cos(t*0.0015+i*43)*H+H)%H;ctx.fillRect(x,y,4,4)}
+   if(Math.sin(t*0.005)>0.94){ctx.fillStyle='rgba(255,245,210,0.65)';ctx.fillRect(0,0,W,H)}
+   ctx.fillStyle='#261504';ctx.beginPath();ctx.moveTo(0,H-80);ctx.lineTo(W*.25,H-180);ctx.lineTo(W*.5,H-90);ctx.lineTo(W*.75,H-220);ctx.lineTo(W,H-100);ctx.lineTo(W,H);ctx.lineTo(0,H);ctx.fill();
+   const rx=W/2+Math.sin(t*0.001)*30,ry=H-60;ctx.fillStyle='#090604';
+   ctx.beginPath();ctx.moveTo(rx-35,ry);ctx.lineTo(rx-15,ry-130);ctx.lineTo(rx+15,ry-130);ctx.lineTo(rx+45,ry);ctx.closePath();ctx.fill();
+   ctx.beginPath();ctx.arc(rx,ry-145,22,0,Math.PI*2);ctx.fill();
+   ctx.strokeStyle='#f39c12';ctx.lineWidth=7;ctx.beginPath();ctx.moveTo(rx+25,ry-100);ctx.lineTo(rx+75,ry-180);ctx.stroke();
+   ctx.fillStyle='#f1c40f';ctx.fillRect(rx+60,ry-200,35,24);
+   for(let i=0;i<16;i++){const spX=rx+75+Math.sin(t*0.02+i)*40,spY=ry-190+Math.cos(t*0.03+i)*40;ctx.fillStyle=i%2?'#ff4d4d':'#ffd700';ctx.fillRect(spX,spY,3,3)}
+   ctx.fillStyle='#ffd700';ctx.font='900 42px sans-serif';ctx.textAlign='center';ctx.fillText('K.G.F : CHAPTER 3',W/2,95);
+   ctx.font='700 16px sans-serif';ctx.fillStyle='#f8c291';ctx.fillText('⚡ 4K DOLBY ATMOS 7.1 · ALL INDIA BLOCKBUSTER ⚡',W/2,125);
+  }},
+ {id:'pushpa2',t:'Pushpa 2: The Rule',sub:'Jhukega Nahi Saala! Raaj Shuru',tag:'ACTION · CRIME · 3h 10m',c:'#e74c3c',price:240,
+  quotes:['"Pushpa naam sunke flower samjhe kya? Fire nahi, Wildfire hai main!"','"Galli ka gunda nahi, jungle ka badshah hoon!"','"Rakt-chandan ke jungle mein Pushpa ka kanoon chalta hai!"'],
+  draw(ctx,W,H,t){
+   const gd=ctx.createLinearGradient(0,0,0,H);gd.addColorStop(0,'#0f1712');gd.addColorStop(.7,'#1e0b0b');gd.addColorStop(1,'#0d0404');
+   ctx.fillStyle=gd;ctx.fillRect(0,0,W,H);
+   ctx.fillStyle='#09100a';for(let i=0;i<8;i++){const tx=i*120+20;ctx.fillRect(tx,H-260,30,260);ctx.beginPath();ctx.arc(tx+15,H-250,55,0,Math.PI*2);ctx.fill()}
+   for(let i=0;i<50;i++){const ex=(i*37+Math.sin(t*0.002+i)*40)%W,ey=(H-((t*0.12+i*17)%H));ctx.fillStyle=i%3===0?'#ff2200':i%3===1?'#ff8800':'#ffdd44';ctx.beginPath();ctx.arc(ex,ey,2+Math.sin(i)*1.5,0,Math.PI*2);ctx.fill()}
+   const trX=(t*0.08)%(W+200)-150;ctx.fillStyle='#c0392b';ctx.fillRect(trX,H-130,170,80);ctx.fillStyle='#111';ctx.fillRect(trX+130,H-110,50,60);
+   ctx.fillStyle='rgba(255,255,180,0.2)';ctx.beginPath();ctx.moveTo(trX+180,H-80);ctx.lineTo(trX+340,H-130);ctx.lineTo(trX+340,H-30);ctx.fill();
+   ctx.fillStyle='#1a1a1a';[trX+35,trX+80,trX+150].forEach(wx=>{ctx.beginPath();ctx.arc(wx,H-50,20,0,Math.PI*2);ctx.fill()});
+   ctx.fillStyle='#ff4d4d';ctx.font='900 44px sans-serif';ctx.textAlign='center';ctx.fillText('PUSHPA 2 : THE RULE',W/2,95);
+   ctx.font='700 16px sans-serif';ctx.fillStyle='#ffb8b8';ctx.fillText('🔥 JHUKEGA NAHI SAALA · WILDFIRE EDITION 🔥',W/2,125);
+  }},
+ {id:'rrr2',t:'RRR 2: Revolution',sub:'Fire & Water Battle Unleashed',tag:'PATRIOTIC · EPIC · 3h 05m',c:'#2980b9',price:220,
+  quotes:['"Lahu se likhi jayegi azaadi ki dastan!"','"Ek aag ban kar jalta hai, dooja toofan ban ke behta hai!"','"Dosti bhi lajawab, dushmani bhi benazeer!"'],
+  draw(ctx,W,H,t){
+   const gd=ctx.createLinearGradient(0,0,W,0);gd.addColorStop(0,'#b33927');gd.addColorStop(.5,'#2c3e50');gd.addColorStop(1,'#1b6ca8');
+   ctx.fillStyle=gd;ctx.fillRect(0,0,W,H);
+   ctx.strokeStyle='rgba(130,204,221,0.5)';ctx.lineWidth=3;for(let j=0;j<5;j++){ctx.beginPath();for(let x=W/2;x<=W;x+=20)ctx.lineTo(x,H-150+j*30+Math.sin(t*0.005+x*0.02+j)*16);ctx.stroke()}
+   for(let i=0;i<30;i++){const fx=Math.random()*W*0.48,fy=H-Math.random()*220;ctx.fillStyle='rgba(255,100,20,0.4)';ctx.beginPath();ctx.arc(fx,fy,14+Math.sin(t*0.01+i)*8,0,Math.PI*2);ctx.fill()}
+   ctx.fillStyle='#ffffff';ctx.font='900 48px sans-serif';ctx.textAlign='center';ctx.fillText('R R R : 2',W/2,95);
+   ctx.font='700 17px sans-serif';ctx.fillStyle='#f5cd79';ctx.fillText('🏹 REVOLUTION · WATER & FIRE CLASH 🌊🔥',W/2,125);
+  }},
+ {id:'stree2',t:'Stree 2: Sarkate Ka Aatank',sub:'Chanderi Ka Sabse Bada Khauf',tag:'HORROR · COMEDY · 2h 25m',c:'#8e44ad',price:200,
+  quotes:['"O Stree kal aana... nahi, abhi darwaza kholo!"','"Chanderi puran mein sab likha hai, bas humne padha nahi!"','"Bhootni se dosti ho sakti hai, pyaar nahi!"'],
+  draw(ctx,W,H,t){
+   const gd=ctx.createLinearGradient(0,0,0,H);gd.addColorStop(0,'#0b0818');gd.addColorStop(.6,'#21153b');gd.addColorStop(1,'#08040f');
+   ctx.fillStyle=gd;ctx.fillRect(0,0,W,H);
+   ctx.fillStyle='#f5e6cb';ctx.beginPath();ctx.arc(W*.75,130,55,0,Math.PI*2);ctx.fill();
+   ctx.fillStyle='rgba(245,230,203,0.15)';ctx.beginPath();ctx.arc(W*.75,130,85,0,Math.PI*2);ctx.fill();
+   ctx.fillStyle='#0f0b1a';ctx.fillRect(W*.1,H-220,W*.8,220);
+   for(let k=0;k<5;k++){const dx=W*.18+k*110;ctx.beginPath();ctx.arc(dx,H-220,38,Math.PI,0);ctx.fill();ctx.fillRect(dx-4,H-285,8,30)}
+   for(let i=0;i<4;i++){const ex=W*.2+i*140+Math.sin(t*0.001+i)*20,ey=H-120;ctx.fillStyle='#ff0033';ctx.beginPath();ctx.arc(ex,ey,4,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.arc(ex+16,ey,4,0,Math.PI*2);ctx.fill()}
+   ctx.fillStyle='#111';for(let b=0;b<8;b++){const bx=(t*0.1+b*110)%(W+100)-50,by=70+Math.sin(t*0.003+b)*40;ctx.beginPath();ctx.moveTo(bx,by);ctx.lineTo(bx-12,by-10);ctx.lineTo(bx-6,by+4);ctx.lineTo(bx+6,by+4);ctx.lineTo(bx+12,by-10);ctx.closePath();ctx.fill()}
+   ctx.fillStyle='#e056fd';ctx.font='900 42px sans-serif';ctx.textAlign='center';ctx.fillText('STREE 2 : SARKATE KA AATANK',W/2,95);
+   ctx.font='700 16px sans-serif';ctx.fillStyle='#dff9fb';ctx.fillText('👻 O STREE RAKSHA KARNA · 4K DOLBY HORROR 🕯️',W/2,125);
+  }},
+ {id:'dhoom4',t:'Dhoom 4: Cyber Heist',sub:'Superbike Race Through Nagari Metro',tag:'RACE · THRILL · 2h 35m',c:'#00d2d3',price:230,
+  quotes:['"Khel bada hai, aur khiladi hum!"','"Raftaar meri pehchaan hai, pakad sako to pakad lo!"','"Nagari ki sadkon par Dhoom macha denge!"'],
+  draw(ctx,W,H,t){
+   const gd=ctx.createLinearGradient(0,0,0,H);gd.addColorStop(0,'#050811');gd.addColorStop(.5,'#0a1b2a');gd.addColorStop(1,'#040a12');
+   ctx.fillStyle=gd;ctx.fillRect(0,0,W,H);
+   for(let i=0;i<18;i++){const bh=90+(i*47)%140,bx=i*52;ctx.fillStyle=i%2?'#0d2238':'#081726';ctx.fillRect(bx,H-150-bh,46,bh);ctx.fillStyle=i%3===0?'#00d2d3':i%3===1?'#ff007f':'#feca57';for(let w=0;w<bh;w+=18)ctx.fillRect(bx+10,H-140-bh+w,6,8)}
+   ctx.fillStyle='#131722';ctx.beginPath();ctx.moveTo(W*.4,H-150);ctx.lineTo(W*.6,H-150);ctx.lineTo(W,H);ctx.lineTo(0,H);ctx.fill();
+   ctx.strokeStyle='#fffa65';ctx.lineWidth=5;for(let i=0;i<6;i++){const p=((t*0.4+i*70)%350)/350,y=H-150+p*150,x=W/2;ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x,y+24*p);ctx.stroke()}
+   const sirenColor=Math.sin(t*0.02)>0?'#ff3838':'#2e86de';ctx.fillStyle=sirenColor;ctx.beginPath();ctx.arc(W*.2,H-130,22,0,Math.PI*2);ctx.fill();
+   const sx=W/2+Math.sin(t*0.003)*70,sy=H-85;ctx.fillStyle='#00d2d3';ctx.fillRect(sx-35,sy-25,70,30);ctx.fillStyle='#ff007f';ctx.fillRect(sx+35,sy-18,20,10);
+   ctx.fillStyle='#000';ctx.beginPath();ctx.arc(sx-25,sy+10,18,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.arc(sx+25,sy+10,18,0,Math.PI*2);ctx.fill();
+   ctx.fillStyle='#ff9f43';ctx.beginPath();ctx.moveTo(sx-35,sy-12);ctx.lineTo(sx-75-Math.random()*25,sy-10);ctx.lineTo(sx-35,sy-4);ctx.fill();
+   ctx.fillStyle='#00d2d3';ctx.font='900 44px sans-serif';ctx.textAlign='center';ctx.fillText('DHOOM 4 : CYBER HEIST',W/2,95);
+   ctx.font='700 16px sans-serif';ctx.fillStyle='#ff9ff3';ctx.fillText('🏍️ ULTRA HD 4K NITRO RACING · HIGH-SPEED CHASE 🔥',W/2,125);
+  }}
+];
+let curMovie=0,curSeat={name:'Gold Balcony',price:250},thAnimId=null,thSeats=[{name:'Silver Stall',price:150},{name:'Gold Balcony',price:250},{name:'VIP Recliner',price:400}];
+const thc=$('thc'),thctx=thc.getContext('2d');
+function updateMovieSumm(){
+ const hasPop=$('thPop').checked,m=MOVIES[curMovie],tot=curSeat.price+(hasPop?99:0);
+ $('thSumm').textContent='Ticket: ₹'+tot+' ('+m.t+' · '+curSeat.name+(hasPop?' + 🍿 Popcorn Combo':'')+')';
+}
+function renderTheaterUI(){
+ const ml=$('thMovies');ml.textContent='';
+ MOVIES.forEach((m,i)=>{
+  const b=document.createElement('button');
+  b.style.cssText='flex:1;min-width:140px;padding:8px;text-align:left;border:1px solid '+(i===curMovie?'#ffd700':'#333')+';background:'+(i===curMovie?'rgba(243,156,18,0.2)':'#1a1e2d')+';border-radius:10px';
+  b.innerHTML='<b style="color:'+m.c+';display:block;font-size:13px">'+m.t+'</b><small style="color:#aaa;font-size:11px">'+m.tag+'</small>';
+  b.onclick=()=>{curMovie=i;renderTheaterUI();updateMovieSumm()};
+  ml.appendChild(b);
+ });
+ const sl=$('thSeats');sl.textContent='';
+ thSeats.forEach(s=>{
+  const b=document.createElement('button');
+  b.style.cssText='padding:8px 14px;border:1px solid '+(s.name===curSeat.name?'#ffd700':'#333')+';background:'+(s.name===curSeat.name?'rgba(255,215,0,0.2)':'#1a1e2d')+';border-radius:10px;font-size:12px';
+  b.textContent=s.name+' (₹'+s.price+')';
+  b.onclick=()=>{curSeat=s;renderTheaterUI();updateMovieSumm()};
+  sl.appendChild(b);
+ });
+ updateMovieSumm();
+}
+function runMovieLoop(t){
+ const m=MOVIES[curMovie];
+ m.draw(thctx,840,472,t);
+ const qi=Math.floor(t/4000)%m.quotes.length;
+ $('thSub').textContent=m.quotes[qi];
+ thAnimId=requestAnimationFrame(runMovieLoop);
+}
+function startScreening(){
+ cancelAnimationFrame(thAnimId);
+ $('thBook').style.display='none';
+ $('thHall').style.display='flex';
+ $('thMode').textContent='🎟️ Ticket Counter';
+ thAnimId=requestAnimationFrame(runMovieLoop);
+}
+function openTheater(){
+ $('tht').style.display='flex';
+ renderTheaterUI();
+ snd('fanfare');
+}
+$('bCinema').onclick=()=>openTheater();
+$('thClose').onclick=()=>{
+ cancelAnimationFrame(thAnimId);
+ $('tht').style.display='none';
+};
+$('thMode').onclick=()=>{
+ if($('thHall').style.display==='flex'){
+  cancelAnimationFrame(thAnimId);
+  $('thHall').style.display='none';
+  $('thBook').style.display='block';
+  $('thMode').textContent='🎞️ Screen View';
+ }else{
+  startScreening();
+ }
+};
+$('thPop').onchange=updateMovieSumm;
+$('thPay').onclick=()=>{
+ const m=MOVIES[curMovie],hasPop=$('thPop').checked,seatNo=(1+Math.random()*24|0)+'ABCDEF'[Math.random()*6|0];
+ const pnr='TK'+Math.random().toString(36).slice(2,8).toUpperCase();
+ const pass=$('thPass');
+ pass.style.display='block';
+ pass.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><b style="color:#ffd700;font-size:15px">🎬 SUMIT TALKIES E-PASS</b><span style="background:#e74c3c;color:#fff;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:700">AUDI 1 · 4K</span></div><div style="font-size:13px;color:#fff;line-height:1.5">Film: <b style="color:'+m.c+'">'+m.t+'</b><br>Seat: <b>'+seatNo+' ('+curSeat.name+')</b> · PNR: <b>'+pnr+'</b><br>Combo: '+(hasPop?'🍿 Jumbo Popcorn + Cold Drink Included':'Ticket Only')+'</div><div style="font-family:monospace;letter-spacing:4px;color:#888;margin-top:6px;font-size:12px">||| | |||| || ||| |||| |</div>';
+ snd('fanfare');
+ toast('🎟️ Ticket Booked! Screen shuru ho raha hai...');
+ setTimeout(()=>startScreening(),800);
+};
+$('thClap').onclick=()=>{snd('clap');toast('👏🎉 Taaliyan aur seeti! Auditorium goonj utha!')};
+$('thEat').onclick=()=>{mst.coins+=5;sv();snd('coin');toast('🍿 Crunchy caramel popcorn khaya! 🪙 +5 coins!')};
+$('thNext').onclick=()=>{curMovie=(curMovie+1)%MOVIES.length;renderTheaterUI();snd('fanfare');toast('🎞️ Now Playing: '+MOVIES[curMovie].t)};
+let seatViews=['Center Row J-12','Balcony Recliner B-4','Front Row Ultra-View A-6'],sVIdx=0;
+$('thView').onclick=()=>{sVIdx=(sVIdx+1)%seatViews.length;toast('🪑 Seat Camera: '+seatViews[sVIdx])};
+let dolbyOn=true;
+$('thVol').onclick=()=>{dolbyOn=!dolbyOn;$('thVol').textContent=dolbyOn?'🔊 Dolby Atmos':'🔈 Mute';toast(dolbyOn?'🔊 Dolby Atmos 7.1 ON':'Sound Mute')};
+
+// ======== NAYA 9: Bank & Lucky ATM Spin ========
+function updateBankUI(){
+ $('bkUser').textContent=meNm||'Aap';
+ $('bkBal').textContent=mst.coins;
+}
+$('bBank').onclick=()=>{updateBankUI();$('bkMsg').textContent='';$('bkModal').style.display='flex'};
+$('bkClose').onclick=()=>$('bkModal').style.display='none';
+$('bkDep').onclick=()=>{
+ if(mst.coins<10){toast('Jama karne ke liye kam se kam 🪙10 chahiye');return}
+ mst.coins-=10;sv();updateBankUI();snd('coin');
+ $('bkMsg').textContent='✅ 🪙10 Nagari Fixed Deposit mein jama ho gaye!';
+ toast('🪙 10 Deposit Successful');
+};
+$('bkWdl').onclick=()=>{
+ mst.coins+=10;sv();updateBankUI();snd('coin');
+ $('bkMsg').textContent='✅ 🪙10 ATM se nikaal liye!';
+ toast('🪙 10 Withdrawn from ATM');
+};
+let lastSpinDate=null;
+$('bkSpin').onclick=()=>{
+ const today=new Date().toDateString();
+ if(lastSpinDate===today){
+  $('bkMsg').textContent='⚠️ Aaj ka Lucky Spin ho chuka hai! Kal naya mauka milega.';
+  toast('Aaj ka spin ho chuka');return;
+ }
+ lastSpinDate=today;
+ const win=[25,40,50,75,100][Math.floor(Math.random()*5)];
+ mst.coins+=win;sv();updateBankUI();snd('fanfare');
+ $('bkMsg').textContent='🎉 BUMPER JACKPOT! Aapne jeete 🪙'+win+' Free Coins!';
+ toast('🎰 +'+win+' Coins Jeete!');
+};
+
+// ======== NAYA 10: 4K Ultra HD Drone Camera Mode ========
+let droneActive=false;
+$('bDrone').onclick=()=>{
+ droneActive=!droneActive;
+ $('bDrone').classList.toggle('on',droneActive);
+ if(droneActive){
+  auto=true;dist=140;ph=0.38;
+  toast('🛸 4K Ultra HD Drone Camera Mode Active · Panoramic Nagari Orbit');
+ }else{
+  dist=95;ph=0.95;
+  toast('🛸 Drone Camera Mode Exited');
+ }
+};
 // ---------- loop ----------
 let t0=0,tb=0;
 (function loop(t){requestAnimationFrame(loop);const dt=Math.min((t-t0)/1000,.05);t0=t;if(auto)th+=dt*.07;step(dt,t);
